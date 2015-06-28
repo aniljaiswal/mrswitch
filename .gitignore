@@ -1,4 +1,6 @@
 /vendor
 /node_modules
-.env
+.env*
+/.idea
 tests/_output/*
+/codeception.yml

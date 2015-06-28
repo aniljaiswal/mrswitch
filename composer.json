@@ -8,7 +8,11 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
         "zizaco/entrust": "dev-master",
-        "doctrine/dbal": "^2.6@dev"
+        "doctrine/dbal": "^2.6@dev",
+        "codeception/codeception": "^2.1@dev",
+        "codeception/verify": "dev-master",
+        "razorpay/razorpay": "dev-master",
+        "illuminate/html": "^5.0@dev"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

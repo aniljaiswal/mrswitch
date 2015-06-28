@@ -11,11 +11,18 @@
 |
 */
 
+
+/**
+ * Home Page
+ */
 Route::get('/', function () {
     return view('welcome');
 });
 
-// Authentication routes...
+/**
+ * Authentication routes...
+ */
+
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
@@ -41,3 +48,31 @@ Route::get('home', ['middleware' => 'auth', function() {
     // Only authenticated users may enter...
     return 'You\'re logged in.';
 }]);
+
+
+/**
+ * Static Pages
+ */
+
+//About Page
+Route::get('about', 'PagesController@about');
+
+//Contact Page
+Route::get('contact', 'PagesController@getContact');
+Route::post('contact', 'PagesController@postContact');
+
+//Privacy Page
+Route::get('privacy', 'PagesController@privacy');
+
+//Terms Page
+Route::get('terms', 'PagesController@terms');
+
+//Refunds Page
+Route::get('refunds', 'PagesController@refunds');
+
+//Pricing Page
+Route::get('pricing', 'PagesController@pricing');
+
+
+//Newsletter Subscription POST
+Route::post('subscribe', ['as' => 'subscribe', 'uses' => 'PagesController@postSubscribe']);

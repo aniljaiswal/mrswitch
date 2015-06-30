@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mr. Switch</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="/css/libs/flat-ui.css">
+	<link rel="stylesheet" href="/css/libs/icon-font.css">
     @yield('styles')
     
 </head>

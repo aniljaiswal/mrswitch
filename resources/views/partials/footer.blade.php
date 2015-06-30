@@ -5,7 +5,7 @@
         <nav class="col-sm-9">
             <div class="col-sm-3">
                 <div>
-                    <a class="brand" href="/"><img src="img/mr_switch_logo.png" alt="Mr. Switch" height="100" width="100"></a>
+                    <a class="brand" href="/"><img src="/img/mr_switch_logo.png" alt="Mr. Switch" height="100" width="100"></a>
                     <h6>Mr. Switch</h6>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                 <h6>COMPANY</h6>
                 <ul>
                     <li>
-                        <a href="/about">About Us</a>
+                        <a href="/about">About us</a>
                     </li>
                     <li>
                         <a href="/blog">Blog</a>

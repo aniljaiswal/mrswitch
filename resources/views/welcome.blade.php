@@ -1,10 +1,11 @@
+<!-- resources/views/welcome.blade.php -->
+
 @extends('pages.default')
+
 
 @section('styles')
 
-<link rel="stylesheet" href="css/libs/flat-ui.css">
-<link rel="stylesheet" href="css/libs/icon-font.css">
-<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="/css/app.css">
 
 @stop
 
@@ -34,14 +35,18 @@
           <div class="row">
               <div class="col-sm-10 col-sm-offset-1">
                   <div class="signup-form">
-                      <form>
-                          <div class="clearfix">
-                              <input type="text" class="form-control" placeholder="Your E-mail">
-                              <input type="password" class="form-control" placeholder="Password">
-                              <input type="password" class="form-control" placeholder="Confirmation">
-                              <button type="submit" class="btn btn-primary">Sign Up</button>
-                          </div>
-                      </form>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="check_submitted()"></iframe>
+                    <form action="https://docs.google.com/forms/d/1DvbZ4M2oeFVsV3s1ODcUL52CvJrEH95arKwxoIFifHk/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
+                      <div class="clearfix">
+                        <input placeholder="Name" type="text" name="entry.589106005" value="" class="form-control" id="entry_589106005" dir="auto" aria-label="Name  " aria-required="true" required="" title="">
+                        <input placeholder="Phone" type="text" name="entry.1689824019" value="" class="form-control" id="entry_1689824019" dir="auto" aria-label="Phone Number  Please enter a valid number." aria-required="true" required="" pattern=".*^(?:\+91(?:-)?|0\d{2,4}-|0|)\d{7,10}$.*" title="Please enter a valid number.">
+                        <input placeholder="Email" type="email" name="entry.1805097311" value="" class="form-control" id="entry_1805097311" dir="auto" aria-label="Email Address  Must be a valid email address" aria-required="true" required="" title="Must be a valid email address">                        
+                        <input type="hidden" name="draftResponse" value="[,,&quot;4766546142149717159&quot;]">
+                        <input type="hidden" name="pageHistory" value="0">
+                        <input type="hidden" name="fbzx" value="4766546142149717159">
+                        <button type="submit" class="btn btn-primary">Get Started</button>
+                      </div>
+                    </form>
                   </div>
               </div>
           </div>
@@ -62,7 +67,7 @@
                       </p>
                   </div>
                   <div class="col-sm-6 img">
-                      <img src="img/ticket-green@2x.png" width="380" height="187" alt="">
+                      <img src="/img/ticket-green@2x.png" width="380" height="187" alt="">
                   </div>
               </div>
           </div>
@@ -82,7 +87,7 @@
                       </p>
                   </div>
                   <div class="col-sm-6 img">
-                      <img width="380" height="179" alt="" src="img/map@2x.png">
+                      <img width="380" height="179" alt="" src="/img/map@2x.png">
                   </div>
               </div>
           </div>
@@ -102,7 +107,7 @@
                       </p>
                   </div>
                   <div class="col-sm-6 img">
-                      <img width="397" height="193" alt="" src="img/ps-wire-imac@2x.png">
+                      <img width="397" height="193" alt="" src="/img/ps-wire-imac@2x.png">
                   </div>
               </div>
           </div>
@@ -118,11 +123,12 @@
 
 @section('scripts')
 
-<script src="js/libs/modernizr.custom.js"></script>
-<script src="js/libs/page-transitions.js"></script>
-<script src="js/libs/startup-kit.js"></script>
+<script src="/js/libs/modernizr.custom.js"></script>
+<script src="/js/libs/page-transitions.js"></script>
+<script src="/js/libs/startup-kit.js"></script>
 <script>
-  
+  var submitted=false;
+
   $('#subscribe-form').submit(function(event) 
   {
     event.preventDefault();
@@ -162,5 +168,16 @@
 
   });
 
+  function check_submitted()
+  {
+    if(submitted) 
+    {
+      $('.clearfix').remove();
+      $('.signup-form > form')
+        .append('<p class="lead" style="color:#999;margin-top:20px">Thank you for your interest. Our representative will get back to you within 24 hours.</p>');
+    }
+  }
+
 </script>
+
 @stop

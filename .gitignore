@@ -3,4 +3,4 @@
 .env*
 /.idea
 tests/_output/*
-/codeception.yml
+codeception.yml

@@ -1,13 +1,4 @@
-<!-- resources/views/welcome.blade.php -->
-
 @extends('pages.default')
-
-
-@section('styles')
-
-<link rel="stylesheet" href="/css/app.css">
-
-@stop
 
 @section('content')
 
@@ -117,67 +108,5 @@
   @include('partials.footer')
 
 </div>
-
-@stop
-
-
-@section('scripts')
-
-<script src="/js/libs/modernizr.custom.js"></script>
-<script src="/js/libs/page-transitions.js"></script>
-<script src="/js/libs/startup-kit.js"></script>
-<script>
-  var submitted=false;
-
-  $('#subscribe-form').submit(function(event) 
-  {
-    event.preventDefault();
-    var email = $('#email-input').val();
-
-    var messageBox = $('#subscribe-form > .message');
-    var token = $('#subscribe-form > input[name="_token"]').val();
-
-    if(email)
-    {
-      $.ajax({
-        url: "/subscribe",
-        type: 'POST',
-        dataType : "json",
-        data : ({email: email, _token: token}),
-        success : function(data) {
-            $('#email-input').val('');
-            messageBox.hasClass('alert-danger') ? messageBox.removeClass('alert-danger') : messageBox.addClass('alert-success');
-            messageBox
-              .text("You're successfully subscribed!")
-              .delay(4000)
-              .fadeOut(2500)
-              .show();
-        },
-        error : function(xhr) {
-          var message = JSON.parse(xhr.responseText).email[0];
-          messageBox.hasClass('alert-success') ? messageBox.removeClass('alert-success') : messageBox.addClass('alert-danger');
-          messageBox.show().text(message).delay(2000).fadeOut(2500);
-        }
-      });
-    }
-    else
-    {
-      messageBox.hasClass('alert-success') ? messageBox.removeClass('alert-success') : messageBox.addClass('alert-danger');
-      messageBox.show().text('Please enter a valid email').show().delay(2000).fadeOut(2500);
-    }
-
-  });
-
-  function check_submitted()
-  {
-    if(submitted) 
-    {
-      $('.clearfix').remove();
-      $('.signup-form > form')
-        .append('<p class="lead" style="color:#999;margin-top:20px">Thank you for your interest. Our representative will get back to you within 24 hours.</p>');
-    }
-  }
-
-</script>
 
 @stop

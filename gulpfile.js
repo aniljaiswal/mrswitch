@@ -14,5 +14,23 @@ require('laravel-elixir-codeception');
  */
 
 elixir(function(mix) {
-    mix.codeception(null, {flags: '--debug'});
+    mix.styles([
+        "libs/bootstrap.min.css",
+        "libs/flat-ui.css",
+        "libs/icon-font.css",
+        "libs/animations.css",
+        "app.css"
+    ], "public/css/");
+
+    mix.scripts([
+    	"libs/jquery.min.js",
+    	"libs/bootstrap.min.js",
+    	"libs/modernizr.custom.js",
+    	"libs/page-transitions.js",
+    	"libs/startup-kit.js",
+    	"custom.js"
+    ], "public/js/");
+
+    mix.version(["css/all.css", "js/all.js"]);
+
 });

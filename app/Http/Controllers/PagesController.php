@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 use App\Subscriber;
 use App\Jobs\SendNewsletterSubscribedEmail;
+use App\Jobs\SendContactFormEmail;
 
 class PagesController extends Controller
 {
@@ -28,17 +29,31 @@ class PagesController extends Controller
      */
     public function getContact()
     {
-        //
+        $title = 'Contact us | Mr. Switch';
+        return view('pages.contact', compact('title'));
     }
 
     /**
-     * Sends a newly submitted contact us form throug email.
+     * Sends a newly submitted contact us form through email.
      *
      * @return Response
      */
-    public function postContact()
+    public function postContact(Request $request)
     {
-        //
+        $this->validate($request, [
+            'name'  => 'required',
+            'email' => 'required|max:100',
+            'message' => 'required'
+        ]);
+
+        $details =  array(  'name' => $request->get('name'),
+                            'email' => $request->get('email'),
+                            'user_message' => $request->get('message')
+                        );
+
+        $this->dispatch(new SendContactFormEmail($details));
+
+        return redirect('contact')->with('status', 'Your message has been sent! We\'ll be in touch shortly.');
     }
 
     /**
@@ -78,7 +93,8 @@ class PagesController extends Controller
      */
     public function pricing()
     {
-        //
+        $title = 'Learn about Pricing and plans | Mr. Switch';
+        return view('pages.pricing', compact('title'));
     }
 
 

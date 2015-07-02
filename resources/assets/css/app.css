@@ -2145,3 +2145,23 @@ footer > .container {
     margin-bottom: 0px;
   }
 }
+
+/* ==== PRIVACY PAGE ====*/
+
+.privacy-page > section.header-6{
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+.privacy-page > section.header-6{
+  color:#2e3138;
+}
+
+.privacy-page > section > div > div > div > h6.last-updated{
+  padding-bottom: 20px;
+}
+
+.privacy-page > section > div > div > div > dl > dd{
+  text-align: justify;
+  padding: 20px 0;
+}

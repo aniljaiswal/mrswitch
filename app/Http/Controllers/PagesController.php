@@ -63,7 +63,8 @@ class PagesController extends Controller
      */
     public function privacy()
     {
-        //
+        $title = 'Mr. Switch | Privacy Poliy';
+        return view('pages.privacy', compact('title'));
     }
 
     /**

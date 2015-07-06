@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="page-wrapper custom-nav privacy-page">
+<div class="page-wrapper custom-nav terms-privacy-page">
 	@include('partials.nav')
 
 	<section class="header-6 v-center">

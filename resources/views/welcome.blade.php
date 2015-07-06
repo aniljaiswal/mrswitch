@@ -11,11 +11,10 @@
       <div class="container">
           <div class="row">
               <div class="col-sm-8 col-sm-offset-2">
-                  <h3>You have the design, you have the code</h3>
+                  <h2 style="color:white;"><b>Book a service, anytime anywhere.</b></h2>
                   <div class="row">
-                      <p class="lead col-sm-10 col-sm-offset-1">
-                          We’ve created the product that will help
-                          your startup to look even better.
+                      <p class="lead col-sm-10 col-sm-offset-1" style="color:#fff">
+                          Now find an electrician quickly, at the comfort of your own!
                       </p>
                   </div>
               </div>

@@ -74,7 +74,8 @@ class PagesController extends Controller
      */
     public function terms()
     {
-        //
+        $title = 'Mr. Switch | Terms of Service';
+        return view('pages.terms', compact('title'));
     }
 
     /**

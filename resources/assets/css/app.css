@@ -807,10 +807,10 @@ section * {
 }
 @media (max-width: 768px) {
   .background {
-    -webkit-background-size: auto 200%;
-    -moz-background-size: auto 200%;
-    -o-background-size: auto 200%;
-    background-size: auto 200%;
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
   }
 }
 .container {
@@ -917,7 +917,7 @@ section * {
 }
 @media (min-width: 992px) {
   .header-6 .navbar .nav {
-    position: absolute;
+/*    position: absolute;*/
     width: 100%;
     height: 0;
     overflow: visible;
@@ -1437,12 +1437,13 @@ footer > .container {
   }
 }
 .header-6-sub .background {
-  background-image: url("/img/NY_001.png");
-  opacity: 80;
-  filter: alpha(opacity=8000);
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  background-image: url("/img/happy-children-hero.jpg");
+  opacity: 60;
+  filter: alpha(opacity=6000);
+  opacity: 0.6;
+  filter: alpha(opacity=60);
 }
+
 .footer-10 {
   margin-top: 0px;
 }
@@ -2148,20 +2149,20 @@ footer > .container {
 
 /* ==== PRIVACY PAGE ====*/
 
-.privacy-page > section.header-6{
+.terms-privacy-page > section.header-6{
   padding-top: 200px;
   padding-bottom: 50px;
 }
 
-.privacy-page > section.header-6{
+.terms-privacy-page > section.header-6{
   color:#2e3138;
 }
 
-.privacy-page > section > div > div > div > h6.last-updated{
+.terms-privacy-page > section > div > div > div > h6.last-updated{
   padding-bottom: 20px;
 }
 
-.privacy-page > section > div > div > div > dl > dd{
+.terms-privacy-page > section > div > div > div > dl > dd{
   text-align: justify;
   padding: 20px 0;
 }

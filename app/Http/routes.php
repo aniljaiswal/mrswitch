@@ -67,3 +67,6 @@ Route::get('pricing', 'PagesController@pricing');
 
 //Newsletter Subscription POST
 Route::post('subscribe', ['as' => 'subscribe', 'uses' => 'PagesController@postSubscribe']);
+
+//Careers Page
+Route::get('careers', 'PagesController@careers');

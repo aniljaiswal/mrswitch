@@ -1379,7 +1379,7 @@ section * {
     margin-top: 0;
   }
   .footer-10 .brand {
-    margin-bottom: 33px;
+    padding-left:30px;
   }
 }
 .footer-10 .input-group {
@@ -2149,20 +2149,20 @@ footer > .container {
 
 /* ==== PRIVACY PAGE ====*/
 
-.terms-privacy-page > section.header-6{
+.static-pages > section.header-6{
   padding-top: 200px;
   padding-bottom: 50px;
 }
 
-.terms-privacy-page > section.header-6{
+.static-pages > section.header-6{
   color:#2e3138;
 }
 
-.terms-privacy-page > section > div > div > div > h6.last-updated{
+.static-pages > section > div > div > div > h6.last-updated{
   padding-bottom: 20px;
 }
 
-.terms-privacy-page > section > div > div > div > dl > dd{
+.static-pages > section > div > div > div > dl > dd{
   text-align: justify;
   padding: 20px 0;
 }

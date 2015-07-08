@@ -100,6 +100,11 @@ class PagesController extends Controller
     }
 
 
+    /**
+     * Subscribe the user and sends an email
+     * @param  Request $request
+     * @return status
+     */
     public function postSubscribe(Request $request)
     {
         $this->validate($request, [
@@ -112,5 +117,13 @@ class PagesController extends Controller
         $this->dispatch(new SendNewsletterSubscribedEmail($subscriber));
 
         return response()->json(['status' => 'ok']);
+    }
+
+    /**
+     *  Show the careers page
+     */
+    public function careers()
+    {
+        return view('pages.careers')->with('title', 'Join Us | Mr. Switch');
     }
 }

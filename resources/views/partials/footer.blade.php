@@ -13,13 +13,10 @@
                 <h6>PRODUCT</h6>
                 <ul>
                     <li>
-                        <a href="/pricing">Pricing</a>
+                        <a href="/#pricing">Pricing</a>
                     </li>
                     <li>
-                        <a href="/features">Features</a>
-                    </li>
-                    <li>
-                        <a href="/customers">Customers</a>
+                        <a href="/#features">Features</a>
                     </li>
                 </ul>
             </div>
@@ -30,13 +27,7 @@
                         <a href="/about">About us</a>
                     </li>
                     <li>
-                        <a href="/blog">Blog</a>
-                    </li>
-                    <li>
                         <a href="/careers">Careers</a>
-                    </li>
-                    <li>
-                        <a href="/contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -44,13 +35,7 @@
                 <h6>HELP</h6>
                 <ul>
                     <li>
-                        <a href="/feedback">Feedback</a>
-                    </li>
-                    <li>
-                        <a href="/referral-program">Referral Program</a>
-                    </li>
-                    <li>
-                        <a href="/faqs">FAQ</a>
+                        <a href="/contact">Contact</a>
                     </li>
                     <li>
                         <a href="/refunds">Refunds</a>

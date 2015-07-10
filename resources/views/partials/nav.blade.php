@@ -21,13 +21,13 @@
                     </div>
                 </div>
                 <div class="collapse navbar-collapse">
-                    <?php $activeMenu = isset($activeMenu) ? $activeMenu : '';?>
-                    <?php $menuItems = ['PRICING','FEATURES','SERVICES','CONTACT']; ?>
+                    <?php $menuItems = ['PRICING','FEATURES','SERVICES']; ?>
                     <ul class="nav">
                             <li><a href="/">HOME</a></li>
                         @foreach($menuItems as $name)
-                            <li><a class="{{ $activeMenu === $name ? 'active' : ''}}" href="{{ '/'.strtolower($name) }}">{{ $name }}</a></li>
+                            <li><a href="#{{ strtolower($name) }}">{{ $name }}</a></li>
                         @endforeach
+                            <li><a href="/contact" class="{{ isset($activeMenu) && $activeMenu == 'CONTACT' ? 'active' : ''}}">CONTACT</a></li>
                     </ul>
                 </div>
             </div>

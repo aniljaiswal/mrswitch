@@ -7759,7 +7759,7 @@ section * {
   left: 0;
   width: 100%;
   padding-top: 280px;
-  padding-bottom: 90px;
+  padding-bottom: 112px;
   overflow: hidden;
   color: #bdc3c7;
   text-align: center;
@@ -8477,7 +8477,7 @@ footer > .container {
 
 .content-16 {
   position: relative;
-  padding-top: 220px;
+  padding-top: 60px;
   padding-bottom: 0px;
 }
 .content-16.v-center,

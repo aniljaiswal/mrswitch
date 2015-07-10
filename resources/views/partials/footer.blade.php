@@ -60,7 +60,7 @@
     </div>
     <div class="row copy-terms">
         <div class="terms">
-            <small>Be sure to take a look at our 
+            <small>Our  
                 <a href="/terms">Terms of Service</a> and 
                 <a href="/privacy">Privacy Policy</a>.
             </small>

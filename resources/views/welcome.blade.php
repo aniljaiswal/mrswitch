@@ -69,18 +69,18 @@
                 <div class="description">
                   <div class="description-box">
                     <big>6 Visits/year</big>
-Without iconic symbolsreally finish your work - for clearly understand.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </div>
                   <div class="description-box">
-                    <big>10 photos per month</big>
-Without iconic symbolsreally finish your work - for clearly understand.
+                    <big>1 visits free on renewal</big>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </div>
                 </div>
                 <div class="description-more">
                   <span class="fui-cmd"></span>
-                  <big>10,000 users</big>
-                  <p class="info">Without iconic symbolsreally finish your work - for clearly understand.</p>
-                  <a class="btn btn-primary" href="#">Change to this Plan</a>
+                  <big>10+ benefits</big>
+                  <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a class="btn btn-primary" href="#">Get Started</a>
                 </div>
               </div>
             </div>
@@ -96,18 +96,18 @@ Without iconic symbolsreally finish your work - for clearly understand.
                 <div class="description">
                   <div class="description-box">
                     <big>12 Visits/year</big>
-Without iconic symbolsreally finish your work - for clearly understand.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </div>
                   <div class="description-box">
-                    <big>10 photos per month</big>
-Without iconic symbolsreally finish your work - for clearly understand.
+                    <big>2 visits free on renewal</big>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </div>
                 </div>
                 <div class="description-more">
                   <span class="fui-cmd"></span>
-                  <big>Unlimited users</big>
-                  <p class="info">Without iconic symbolsreally finish your work - for clearly understand.</p>
-                  <a class="btn btn-primary" href="#">Change to this Plan</a>
+                  <big>20+ benefits</big>
+                  <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a class="btn btn-primary" href="#">Get Started</a>
                 </div>
               </div>
             </div>
@@ -123,18 +123,18 @@ Without iconic symbolsreally finish your work - for clearly understand.
                 <div class="description">
                   <div class="description-box">
                     <big>24 Visits/year</big>
-Without iconic symbolsreally finish your work - for clearly understand.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </div>
                   <div class="description-box">
-                    <big>50 photos per month</big>
-Without iconic symbolsreally finish your work - for clearly understand.
+                    <big>4 visits free on renewal</big>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </div>
                 </div>
                 <div class="description-more">
                   <span class="fui-cmd"></span>
-                  <big>50,000 users</big>
-                  <p class="info">Without iconic symbolsreally finish your work - for clearly understand.</p>
-                  <a class="btn btn-primary" href="#">Change to this Plan</a>
+                  <big>40+ benefits</big>
+                  <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a class="btn btn-primary" href="#">Get Started</a>
                 </div>
               </div>
             </div>
@@ -194,11 +194,11 @@ Without iconic symbolsreally finish your work - for clearly understand.
           <div class="container">
               <div class="row">
                   <div class="col-sm-6 aligment">
-                      <h3>Multi useful components</h3>
+                      <h3>Best in class Services</h3>
                       <p>
-                          Startup Design Framework contains components and complex blocks which
-                          can easily be integrated into almost any design. All of these components are made in
-                          the same style.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                          Quibusdam libero officiis praesentium nesciunt? Quos ducimus optio 
+                          assumenda quibusdam animi, veritatis saepe possimus, deserunt nemo ipsa tenetur!
                       </p>
                   </div>
                   <div class="col-sm-6 img">
@@ -215,10 +215,11 @@ Without iconic symbolsreally finish your work - for clearly understand.
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 aligment">
-                        <h3>Demo version</h3>
+                        <h3>Awesome Pricing</h3>
                         <p>
-                            In this demo version of Startup Framework, we show you the structure of our framework.
-                            The package includes few samples that can be used to create the design.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                          Quibusdam libero officiis praesentium nesciunt? Quos ducimus optio 
+                          assumenda quibusdam animi, veritatis saepe possimus, deserunt nemo ipsa tenetur!
                         </p>
                     </div>
                     <div class="col-sm-6 img">
@@ -235,10 +236,11 @@ Without iconic symbolsreally finish your work - for clearly understand.
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 aligment">
-                        <h3>Twenty five awesome samples</h3>
+                        <h3>24x7 Availability</h3>
                         <p>
-                            The most important part of the Startup Framework is the samples.
-                            The samples form a set of 25 usable pages or you can add new blocks from UI Kit.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                          Quibusdam libero officiis praesentium nesciunt? Quos ducimus optio 
+                          assumenda quibusdam animi, veritatis saepe possimus, deserunt nemo ipsa tenetur!
                         </p>
                     </div>
                     <div class="col-sm-6 img">

@@ -11,14 +11,14 @@
 	      <div class="row">
 	        <div class="col-sm-5">
 	          <h3>Get in touch with us</h3>
-	          <p>As a Harvard professor, he was one of the first to explore the relationship in equilibrium.</p>
+	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 	          <div class="links">
-	            <a href="tel:09873598387"><span class="fui-phone"></span> +91 987 359 83 87</a>
+	            <a href="tel:09873598387"><span class="fui-phone"></span> +91 987 759 84 87</a>
 	            <br>
 	            <a href="mailto:help@mrswitch.in"><span class="fui-mail"></span> help@mrswitch.in</a>
 	          </div>
 	          <h6>Where to find us</h6>
-	          <p>As a Harvard professor, he was one of the first to explore the relationship in equilibrium.</p>
+	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 	          <div class="map">
 	            <!--map-->
 	            <iframe id="address-map" src="" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -26,7 +26,7 @@
 	        </div>
 	        <div class="col-sm-6 col-sm-offset-1">
 	          <h3>You can mail us</h3>
-	          <p>As a Harvard professor, he was one of the first to explore the relationship in equilibrium.</p>
+	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 	          	@if (session('status'))
 				    <div class="alert alert-success">
 				        {{ session('status') }}

@@ -8952,4 +8952,21 @@ footer > .container {
   text-align: justify;
   padding: 20px 0;
 }
+
+/* ==== Scroll To Top ====*/
+.backtotop {
+  background: #d0d0d0;
+  padding: 10px 15px;
+  font-size: 18px;
+  color: #FFF;
+  border-radius: 3px;
+  -webkit-transition: background 300ms;
+  -moz-transition: background 300ms;
+  transition: background 300ms;
+}
+
+.backtotop:hover {
+  background: #c3c3c3;
+  cursor: pointer;
+}
 /*# sourceMappingURL=all.css.map */

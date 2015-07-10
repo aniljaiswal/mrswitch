@@ -1,3 +1,5 @@
+
+//Newsletter subscription handler script
 var submitted=false;
 
 $('#subscribe-form').submit(function(event) 
@@ -44,9 +46,9 @@ function check_submitted()
 {
   if(submitted) 
   {
-    $('.clearfix').remove();
+    $('#ss-form > div.clearfix').remove();
     $('.signup-form > form')
-      .append('<p class="lead" style="color:#999;margin-top:20px">Thank you for your interest. Our representative will get back to you within 24 hours.</p>');
+      .append('<p class="lead" style="color:#999;margin-top:20px">Thank you for your interest. Our representative will get back to you within 4 hours.</p>');
   }
 }
 

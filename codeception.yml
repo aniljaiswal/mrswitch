@@ -17,7 +17,7 @@ modules:
         Db:
             dsn: 'mysql:host=127.0.0.1;port:3306;dbname=laravel'
             user: 'root'
-            password: 'password'
+            password: ''
             dump: 'tests/_data/dump.sql'
             populate: true
             cleanup: true

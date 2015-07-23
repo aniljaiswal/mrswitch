@@ -6,22 +6,25 @@
   <!-- header-6 -->
   @include('partials.nav')
 
+  <!-- Header -->
   <section class="header-6-sub bg-midnight-blue">
       <div class="background">&nbsp;</div>
       <div class="container">
           <div class="row">
               <div class="col-sm-8 col-sm-offset-2">
-                  <h2 style="color:white;"><b>Book a service, anytime anywhere.</b></h2>
+                  <h2 style="color:white;"><b>Book A Service, Anytime Anywhere.</b></h2>
                   <div class="row">
                       <p class="lead col-sm-10 col-sm-offset-1" style="color:#fff">
                           Now find an electrician quickly, at the comfort of your own!
                       </p>
                   </div>
+                  <h2 style="color:white;margin-top:0px;">
+                    <b>CALL US AT: <a style="color:white;" href="tel:01145574846">011 - 45574846</a></b>
+                  </h2>
+                  <p class="h5" style="margin:5px;color:white;">OR</p>
+                  <br>
               </div>
           </div>
-          <br>
-          <br>
-          <br>
           <div class="row">
               <div class="col-sm-10 col-sm-offset-1">
                   <div class="signup-form">
@@ -34,14 +37,79 @@
                         <input type="hidden" name="draftResponse" value="[,,&quot;4766546142149717159&quot;]">
                         <input type="hidden" name="pageHistory" value="0">
                         <input type="hidden" name="fbzx" value="4766546142149717159">
-                        <button type="submit" class="btn btn-primary">Get Started</button>
+                        <button type="submit" class="btn btn-primary">Book Now</button>
                       </div>
                     </form>
                   </div>
               </div>
           </div>
       </div>
-  </section>
+  </section> <!-- Header -->
+
+  <!-- Features -->
+  <div id="features">
+    <section class="content-3 v-center">
+      <div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6 aligment">
+                      <h3>Best in class Services</h3>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                          Quibusdam libero officiis praesentium nesciunt? Quos ducimus optio 
+                          assumenda quibusdam animi, veritatis saepe possimus, deserunt nemo ipsa tenetur!
+                      </p>
+                  </div>
+                  <div class="col-sm-6 img">
+                      <img src="/img/ticket-green@2x.png" width="380" height="187" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- content-3 without delimiter and 2 part -->
+    <section class="content-3 v-center">
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 aligment">
+                        <h3>Awesome Pricing</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                          Quibusdam libero officiis praesentium nesciunt? Quos ducimus optio 
+                          assumenda quibusdam animi, veritatis saepe possimus, deserunt nemo ipsa tenetur!
+                        </p>
+                    </div>
+                    <div class="col-sm-6 img">
+                        <img width="380" height="179" alt="" src="/img/map@2x.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- content-3 without delimiter and 2 part -->
+    <section class="content-3 v-center">
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 aligment">
+                        <h3>24x7 Availability</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                          Quibusdam libero officiis praesentium nesciunt? Quos ducimus optio 
+                          assumenda quibusdam animi, veritatis saepe possimus, deserunt nemo ipsa tenetur!
+                        </p>
+                    </div>
+                    <div class="col-sm-6 img">
+                        <img width="397" height="193" alt="" src="/img/ps-wire-imac@2x.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+  </div> <!-- Features -->
 
   <!-- Pricing-->
   <div id="pricing" class="pricing-page">
@@ -54,14 +122,14 @@
       </div>
     </section>
 
-  <section class="price-5">
+    <section class="price-5">
         <div class="container">
           <div class="plans">
             <div class="plan">
               <div class="title">
                 <div class="price">
                   <small>Rs.</small>
-1999
+                  1999
                 </div>
                 BASIC PLAN
               </div>
@@ -88,7 +156,7 @@
               <div class="title">
                 <div class="price">
                   <small>Rs.</small>
-3999
+                  3999
                 </div>
                 STANDARD PLAN
               </div>
@@ -115,7 +183,7 @@
               <div class="title">
                 <div class="price">
                   <small>Rs.</small>
-7999
+                  7999
                 </div>
                 PREMIUM PLAN
               </div>
@@ -186,71 +254,6 @@
   </div> <!-- Pricing -->
 
   <hr>
-
-  <!-- Features -->
-  <div id="features">
-    <section class="content-3 v-center">
-      <div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-sm-6 aligment">
-                      <h3>Best in class Services</h3>
-                      <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                          Quibusdam libero officiis praesentium nesciunt? Quos ducimus optio 
-                          assumenda quibusdam animi, veritatis saepe possimus, deserunt nemo ipsa tenetur!
-                      </p>
-                  </div>
-                  <div class="col-sm-6 img">
-                      <img src="/img/ticket-green@2x.png" width="380" height="187" alt="">
-                  </div>
-              </div>
-          </div>
-      </div>
-    </section>
-
-    <!-- content-3 without delimiter and 2 part -->
-    <section class="content-3 v-center">
-        <div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 aligment">
-                        <h3>Awesome Pricing</h3>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                          Quibusdam libero officiis praesentium nesciunt? Quos ducimus optio 
-                          assumenda quibusdam animi, veritatis saepe possimus, deserunt nemo ipsa tenetur!
-                        </p>
-                    </div>
-                    <div class="col-sm-6 img">
-                        <img width="380" height="179" alt="" src="/img/map@2x.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- content-3 without delimiter and 2 part -->
-    <section class="content-3 v-center">
-        <div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 aligment">
-                        <h3>24x7 Availability</h3>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                          Quibusdam libero officiis praesentium nesciunt? Quos ducimus optio 
-                          assumenda quibusdam animi, veritatis saepe possimus, deserunt nemo ipsa tenetur!
-                        </p>
-                    </div>
-                    <div class="col-sm-6 img">
-                        <img width="397" height="193" alt="" src="/img/ps-wire-imac@2x.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>  
-  </div>
 
   <!-- Services -->
   <div id="services">

@@ -5,7 +5,6 @@
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle"></button>
                     <a class="brand" href="/"><img src="/img/mr_switch_logo.png" width="60" height="60" alt="Mr. Switch"/> Mr. Switch</a>
-                    <span style="font-size:11px;position:absolute;margin-left:110px;margin-top:30px;color:white;"><small>Let there be Light!</small></span>
                     <div class="social-btns">
                         <a href="https://plus.google.com/+Mrswitchindia" target="_blank">
                             <div class="fui-googleplus"></div>

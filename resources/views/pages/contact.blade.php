@@ -13,9 +13,9 @@
 	          <h3>Get in touch with us</h3>
 	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 	          <div class="links">
-	            <a href="tel:09873598387"><span class="fui-phone"></span> +91 987 759 84 87</a>
+	            <a href="tel:09873598387"><span class="fui-phone"></span> 011 - 4557 4846</a>
 	            <br>
-	            <a href="mailto:help@mrswitch.in"><span class="fui-mail"></span> help@mrswitch.in</a>
+	            <a href="mailto:info@mrswitch.in"><span class="fui-mail"></span> info@mrswitch.in</a>
 	          </div>
 	          <h6>Where to find us</h6>
 	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>

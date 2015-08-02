@@ -1419,13 +1419,13 @@ footer > .container {
   padding-bottom: 80px;
 }
 .content-3.v-center {
-  padding-top: 105px;
-  padding-bottom: 68px;
+  padding-top: 0px;
+  padding-bottom: 15px;
 }
 @media (max-width: 768px) {
   .content-3.v-center {
-    padding-top: 50px;
-    padding-bottom: 50;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .content-3.v-center .img {
     margin-bottom: 0;
@@ -1788,12 +1788,12 @@ footer > .container {
   color: #bdc3c7;
 }
 
-.pricing-page > section.price-5 > div.container:nth-child(2){
+#custom-plans{
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.pricing-page > section.price-5 > div.container:nth-child(2) .contact-wrapper{
+#custom-plans .contact-wrapper{
   padding: 15px;
   margin-top: 20px;
   background-color: #2980b9;
@@ -1801,12 +1801,12 @@ footer > .container {
   text-align: center;
 }
 
-.pricing-page > section.price-5 > div.container:nth-child(2) .contact-wrapper > div.col-sm-9 > .cta-wrapper > h3{
+#custom-plans .contact-wrapper > div.col-sm-9 > .cta-wrapper > h3{
   color:#fff;
   font-family: "Lato", Helvetica, Arial, sans-serif;
 }
 
-.pricing-page > section.price-5 > div.container:nth-child(2) .contact-wrapper > div.col-sm-3 > a{
+#custom-plans .contact-wrapper > div.col-sm-3 > a{
   padding: 20px;
   width: 200px;
   margin-top: 10px;

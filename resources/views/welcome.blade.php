@@ -51,17 +51,26 @@
     <section class="content-3 v-center">
       <div>
           <div class="container">
+              <h1 class="text-center">Why Us?</h1>
+              <br/>
+              <br/>
+              <br/>
               <div class="row">
-                  <div class="col-sm-6 aligment">
-                      <h3>Best in class Services</h3>
+                  <div class="col-sm-6 aligment text-center">
+                      <h3>24x7 availability</h3>
                       <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                          Quibusdam libero officiis praesentium nesciunt? Quos ducimus optio 
-                          assumenda quibusdam animi, veritatis saepe possimus, deserunt nemo ipsa tenetur!
+                          Need electrician at an absurd time and don’t know where to go?
+                          Don’t worry! We will come to you, at any hour of the day or night.
+                          Just let us know what you need and we will attend to you as per your convenience.
                       </p>
                   </div>
-                  <div class="col-sm-6 img">
-                      <img src="/img/ticket-green@2x.png" width="380" height="187" alt="">
+                  <div class="col-sm-6 aligment text-center">
+                      <h3>Help is just a call away</h3>
+                      <p>
+                          We save you from the hassles of searching for an electrician, whether
+                          you need AC repair or wiring change. A single phone call does it all.
+                          The technician arrives at your doorstep in no time!
+                      </p>
                   </div>
               </div>
           </div>
@@ -73,42 +82,25 @@
         <div>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 aligment">
-                        <h3>Awesome Pricing</h3>
+                    <div class="col-sm-6 aligment text-center">
+                        <h3>Awesome pricing</h3>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                          Quibusdam libero officiis praesentium nesciunt? Quos ducimus optio 
-                          assumenda quibusdam animi, veritatis saepe possimus, deserunt nemo ipsa tenetur!
+                          Pay once and you are done! Subscribe to a pocket-friendly plan of your
+                          choice and forget paying per service. Get a fixed number of visits free with
+                          the best of our deals.
                         </p>
                     </div>
-                    <div class="col-sm-6 img">
-                        <img width="380" height="179" alt="" src="/img/map@2x.png">
+                    <div class="col-sm-6 aligment text-center">
+                        <h3>Best in class services</h3>
+                        <p>
+                            User friendly ways to reach us. Skilled and well-equipped professionals at your service.
+                            Build plans that suit your own taste and needs. Feedback facilities to get better out of the best.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- content-3 without delimiter and 2 part -->
-    <section class="content-3 v-center">
-        <div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 aligment">
-                        <h3>24x7 Availability</h3>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                          Quibusdam libero officiis praesentium nesciunt? Quos ducimus optio 
-                          assumenda quibusdam animi, veritatis saepe possimus, deserunt nemo ipsa tenetur!
-                        </p>
-                    </div>
-                    <div class="col-sm-6 img">
-                        <img width="397" height="193" alt="" src="/img/ps-wire-imac@2x.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>  
   </div> <!-- Features -->
 
   <!-- Pricing-->
@@ -116,14 +108,16 @@
     <section class="content-16 v-center">
       <div>
         <div class="container">
-          <h3>Simple Pricing </h3>
+          <h1 class="text-center">Simple Pricing </h1>
           <p class="lead">These plans are probably the best ones ever created.</p>
         </div>
       </div>
     </section>
 
     <section class="price-5">
+        <!-- domestic plans -->
         <div class="container">
+          <h3 class="text-center">DOMESTIC PLANS</h3>
           <div class="plans">
             <div class="plan">
               <div class="title">
@@ -136,18 +130,21 @@
               <div>
                 <div class="description">
                   <div class="description-box">
-                    <big>6 Visits/year</big>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <big>6 Service Visits</big>
+                      Valid till 6 months from the date of subscription
                   </div>
                   <div class="description-box">
-                    <big>1 visits free on renewal</big>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      <big>90 Minutes TAT</big>
+                      We make sure to reach your doorstep within 90 minutes<sup>*</sup>
+                  </div>
+                  <div class="description-box" style="text-align: center;">
+                      <span class="fui-cross" style="font-size: x-large;"></span>
                   </div>
                 </div>
                 <div class="description-more">
                   <span class="fui-cmd"></span>
-                  <big>10+ benefits</big>
-                  <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <big>USE CASES</big>
+                  <p class="info">Ideal for Small Flats, Apartments, Independent Homes</p>
                   <a class="btn btn-primary" href="#">Get Started</a>
                 </div>
               </div>
@@ -163,18 +160,22 @@
               <div>
                 <div class="description">
                   <div class="description-box">
-                    <big>12 Visits/year</big>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <big>12 Service Visits</big>
+                    Valid till 12 months from the date of subscription
                   </div>
                   <div class="description-box">
-                    <big>2 visits free on renewal</big>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      <big>90 Minutes TAT</big>
+                      We strive to reach your doorstep within 90 minutes<sup>*</sup>
+                  </div>
+                  <div class="description-box">
+                    <big>1 Free Electrical Inspection/year</big>
+                    Get your electrical wiring and devices inspected, absolutely free.
                   </div>
                 </div>
                 <div class="description-more">
                   <span class="fui-cmd"></span>
-                  <big>20+ benefits</big>
-                  <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <big>USE CASES</big>
+                  <p class="info">Ideal for Medium to Large Flats, Apartments, Independent Homes</p>
                   <a class="btn btn-primary" href="#">Get Started</a>
                 </div>
               </div>
@@ -190,33 +191,143 @@
               <div>
                 <div class="description">
                   <div class="description-box">
-                    <big>24 Visits/year</big>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <big>24 Service Visits</big>
+                      Valid till 12 months from the date of subscription
                   </div>
                   <div class="description-box">
-                    <big>4 visits free on renewal</big>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      <big>90 Minutes TAT</big>
+                      We strive to reach your doorstep within 90 minutes<sup>*</sup>
+                  </div>
+                  <div class="description-box">
+                    <big>2 Free Electrical Inspections/year</big>
+                      Get your electrical wiring and devices inspected, absolutely free.
                   </div>
                 </div>
                 <div class="description-more">
                   <span class="fui-cmd"></span>
-                  <big>40+ benefits</big>
-                  <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <big>USE CASES</big>
+                  <p class="info">Ideal for Bungalows, Villas, Farm houses</p>
                   <a class="btn btn-primary" href="#">Get Started</a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-    <!--/.container-->
+          <small>* T & C applied</small>
+        </div><!--/ domestic .container-->
 
+        <br/>
+        <br/>
+
+        <!-- commercial plans-->
         <div class="container">
+            <h3 class="text-center">CORPORATE PLANS</h3>
+            <br/>
+            <div class="plans">
+                <div class="plan">
+                    <div class="title">
+                        <div class="price">
+                            <small>Rs.</small>
+                            2499
+                        </div>
+                        BASIC PLAN
+                    </div>
+                    <div>
+                        <div class="description">
+                            <div class="description-box">
+                                <big>6 Service Visits</big>
+                                Valid till 30 days from the starting date of the subscription
+                            </div>
+                            <div class="description-box">
+                                <big>90 Minutes TAT</big>
+                                We strive to reach your doorstep within 90 minutes<sup>*</sup>
+                            </div>
+                            <div class="description-box">
+                                <big>1 Free Electrical Inspection/year<sup>**</sup></big>
+                                Get your electrical wiring and devices inspected, absolutely free.
+                            </div>
+                            <small>** If plan is renewed for at least 6 months</small>
+                        </div>
+                        <div class="description-more">
+                            <span class="fui-cmd"></span>
+                            <big>USE CASES</big>
+                            <p class="info">Ideal for Small Showrooms, Hotels & Restaurants, Offices</p>
+                            <a class="btn btn-primary" href="#">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan plan-2">
+                    <div class="title">
+                        <div class="price">
+                            <small>Rs.</small>
+                            12499
+                        </div>
+                        STANDARD PLAN
+                    </div>
+                    <div>
+                        <div class="description">
+                            <div class="description-box">
+                                <big>36 Service Visits</big>
+                                Valid till 180 days from the starting date of the subscription
+                            </div>
+                            <div class="description-box">
+                                <big>90 Minutes TAT</big>
+                                We strive to reach your doorstep within 90 minutes<sup>*</sup>
+                            </div>
+                            <div class="description-box">
+                                <big>2 Free Electrical Inspection/year</big>
+                                Get your electrical wiring and devices inspected, absolutely free.
+                            </div>
+                        </div>
+                        <div class="description-more">
+                            <span class="fui-cmd"></span>
+                            <big>USE CASES</big>
+                            <p class="info">Ideal for Medium to Large Showrooms, Hotels & Restaurants, Offices</p>
+                            <a class="btn btn-primary" href="#">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan">
+                    <div class="title">
+                        <div class="price">
+                            <small>Rs.</small>
+                            29999
+                        </div>
+                        PREMIUM PLAN
+                    </div>
+                    <div>
+                        <div class="description">
+                            <div class="description-box">
+                                <big>72 Service Visits</big>
+                                Valid till 365 days from the starting date of the subscription
+                            </div>
+                            <div class="description-box">
+                                <big>90 Minutes TAT</big>
+                                We strive to reach your doorstep within 90 minutes<sup>*</sup>
+                            </div>
+                            <div class="description-box">
+                                <big>4 Free Electrical Inspections/year</big>
+                                Get your electrical wiring and devices inspected, absolutely free.
+                            </div>
+                        </div>
+                        <div class="description-more">
+                            <span class="fui-cmd"></span>
+                            <big>USE CASES</big>
+                            <p class="info">Ideal for Banks, Hospitals, Educational Institutes and large corporate offices</p>
+                            <a class="btn btn-primary" href="#">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <small>* T & C applied</small>
+        </div><!--/.corporate .container-->
+
+        <div class="container" id="custom-plans">
           <div class="row">
             <div class="col-sm-12">
               <div class="contact-wrapper well well-lg">
                 <div class="col-sm-9">
                   <div class="cta-wrapper">
-                    <h3>Need a bigger plan?</h3>
+                    <h3>Need a custom plan?</h3>
                     <p>Just tell us what you need and we’d be happy to help.</p>
                   </div>  
                 </div>
@@ -257,7 +368,44 @@
 
   <!-- Services -->
   <div id="services">
-    
+      <div class="container">
+          <h1 class="text-center">Services Offered</h1>
+
+          <div class="row">
+              <div class="col-sm-4">
+                  <h5>General Electrical Work</h5>
+                  <ul>
+                      <li>Switch, Socket & plug repair/installation</li>
+                      <li>Table lamp repair/installation</li>
+                      <li>Tube light fitting</li>
+                      <li>Fuse repair/installation</li>
+                      <li>Doorbell repair/installation</li>
+                  </ul>
+              </div>
+              <div class="col-sm-4">
+                  <h5>
+                      Ceiling, Wall or Exhaust Fan
+                  </h5>
+                  <ul>
+                      <li>Fan installation</li>
+                      <li>Fan noise reduction</li>
+                      <li>Fan regulator repair/replacement</li>
+                      <li>Fan not turning - on</li>
+                      <li>Fan capacitor change</li>
+                  </ul>
+
+              </div>
+              <div class="col-sm-4">
+                  <h5>
+                      MCB or Fuse Installation
+                  </h5>
+                  <ul>
+                      <li>MCB repair/installation</li>
+                      <li>Fuse change</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
   </div>
   
 

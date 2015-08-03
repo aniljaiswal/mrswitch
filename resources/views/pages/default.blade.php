@@ -24,10 +24,6 @@
     </script>
     <!-- end Mixpanel -->
     <script type="text/javascript" async defer src="https://apis.google.com/js/platform.js?publisherid=114849396444703717315"></script>
-    <script src="https://cdn.supportkit.io/supportkit.min.js"></script>
-    <script type="text/javascript">
-        SupportKit.init({appToken: '532kyj8cpzal6xmkcv2ep8zko'});
-    </script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -38,5 +34,9 @@
         ga('send', 'pageview');
     </script>
     <script src="{{ elixir('js/all.js') }}"></script>
+    <script src="https://cdn.supportkit.io/supportkit.min.js"></script>
+    <script type="text/javascript">
+        SupportKit.init({appToken: '532kyj8cpzal6xmkcv2ep8zko'});
+    </script>
 </body>
 </html>

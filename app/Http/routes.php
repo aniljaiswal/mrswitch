@@ -43,7 +43,7 @@ Route::post('subscribe', ['as' => 'subscribe', 'uses' => 'PagesController@postSu
 Route::get('careers', 'PagesController@careers');
 
 //About Us Page
-Route::get('about', 'PagesController@about');
+//Route::get('about', 'PagesController@about');
 
 //Rates Page
-Route::get('service-rates', 'PagesController@pricing');
+//Route::get('service-rates', 'PagesController@pricing');

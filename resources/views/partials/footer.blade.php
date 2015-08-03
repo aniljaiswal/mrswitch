@@ -23,9 +23,9 @@
             <div class="col-sm-3">
                 <h6>COMPANY</h6>
                 <ul>
-                    <li>
-                        <a href="/about">About us</a>
-                    </li>
+                    {{--<li>--}}
+                        {{--<a href="/about">About us</a>--}}
+                    {{--</li>--}}
                     <li>
                         <a href="/careers">Careers</a>
                     </li>

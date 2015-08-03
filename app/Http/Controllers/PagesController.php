@@ -21,11 +21,11 @@ class PagesController extends Controller
      *
      * @return Response
      */
-    public function about()
-    {
-        $title = 'Mr. Switch | About us';
-        return view('pages.about', compact('title'));
-    }
+//    public function about()
+//    {
+//        $title = 'Mr. Switch | About us';
+//        return view('pages.about', compact('title'));
+//    }
 
     /**
      * Show the form for Contact Us Page.

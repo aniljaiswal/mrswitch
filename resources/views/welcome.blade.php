@@ -512,10 +512,10 @@
                       <h3>Something else? Get the rates</h3>
                       <p>Looking for something that isn't covered in the plans? No worries! We provide
                           extensive range of electrical services at very affordable rates. Click the
-                          link below to check the full service catalog.
+                          link below to contact us for the full service catalog.
                       </p>
                       <div class="btns">
-                          <a class="btn btn-primary" href="/service-rates">CHECK RATES</a>
+                          <a class="btn btn-primary" href="/contact">GET ALL RATES</a>
                       </div>
                   </div>
               </div>

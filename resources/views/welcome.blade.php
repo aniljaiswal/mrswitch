@@ -135,7 +135,7 @@
                   </div>
                   <div class="description-box">
                       <big>90 Minutes TAT</big>
-                      We make sure to reach your doorstep within 90 minutes<sup>*</sup>
+                      We strive to reach your doorstep within 90 minutes<sup>*</sup>
                   </div>
                   <div class="description-box" style="text-align: center;">
                       <span class="fui-cross" style="font-size: x-large;"></span>
@@ -368,46 +368,203 @@
 
   <!-- Services -->
   <div id="services">
-      <div class="container">
-          <h1 class="text-center">Services Offered</h1>
-
-          <div class="row">
-              <div class="col-sm-4">
-                  <h5>General Electrical Work</h5>
-                  <ul>
-                      <li>Switch, Socket & plug repair/installation</li>
-                      <li>Table lamp repair/installation</li>
-                      <li>Tube light fitting</li>
-                      <li>Fuse repair/installation</li>
-                      <li>Doorbell repair/installation</li>
-                  </ul>
+      <h1 class="text-center">Services Offered</h1>
+      <p class="lead text-center">Get all electrical services under one roof.</p>
+      <section class="content-2">
+          <div class="container">
+              <div class="row service">
+                  <div class="col-sm-6">
+                      <h3>General Electric Work</h3>
+                      <p>
+                          <b>What's covered in the Plan?</b>
+                          <br/>Tube light fitting
+                          <br/>Doorbell repair/installation
+                          <br/>Table lamp repair/installation
+                          <br/>Wiring Change - upto 5 meters (open wire only)
+                      </p>
+                      <p><b>Other general work - as per actual rate</b></p>
+                      <div class="btns">
+                          <a class="btn btn-primary" href="#">BOOK NOW</a>
+                      </div>
+                  </div>
+                  <div class="col-sm-5 col-sm-offset-1">
+                      <img src="/img/general-electric-work-400.jpg" alt="General Electric Work at Mr. Switch"/>
+                  </div>
               </div>
-              <div class="col-sm-4">
-                  <h5>
-                      Ceiling, Wall or Exhaust Fan
-                  </h5>
-                  <ul>
-                      <li>Fan installation</li>
-                      <li>Fan noise reduction</li>
-                      <li>Fan regulator repair/replacement</li>
-                      <li>Fan not turning - on</li>
-                      <li>Fan capacitor change</li>
-                  </ul>
-
+              <div class="row service">
+                  <div class="col-sm-6">
+                      <h3>Ceiling, Wall or Exhaust Fan</h3>
+                      <p>
+                          <b>What's covered in the plan?</b>
+                          <br/>Fan installation
+                          <br/>Fan noise reduction
+                          <br/>Fan regulator repair/replacement
+                          <br/>Fan not turning - on
+                          <br/>Fan capacitor change
+                      </p>
+                      <p><b>Other fan work - as per actual rate</b></p>
+                      <div class="btns">
+                          <a class="btn btn-primary" href="#">BOOK NOW</a>
+                      </div>
+                  </div>
+                  <div class="col-sm-5 col-sm-offset-1">
+                      <img src="/img/ceiling-fan-400.jpg" alt="Fan installation and repair at Mr. Switch"/>
+                  </div>
               </div>
-              <div class="col-sm-4">
-                  <h5>
-                      MCB or Fuse Installation
-                  </h5>
-                  <ul>
-                      <li>MCB repair/installation</li>
-                      <li>Fuse change</li>
-                  </ul>
+              <div class="row service">
+                  <div class="col-sm-6">
+                      <h3>MCB or Fuse Installation</h3>
+                      <p>
+                          <b>What's covered in the plan?</b>
+                          <br/>MCB repair/installation
+                          <br/>Fuse repair/installation
+                      </p>
+                      <p><b>Other MCB/Fuse work - as per actual rate</b></p>
+                      <div class="btns">
+                          <a class="btn btn-primary" href="#">BOOK NOW</a>
+                      </div>
+                  </div>
+                  <div class="col-sm-5 col-sm-offset-1">
+                      <img src="/img/mcb-repair-400.jpg" alt="MCB and Fuse repair at Mr. Switch"/>
+                  </div>
+              </div>
+              <div class="row service">
+                  <div class="col-sm-6">
+                      <h3>Lamps and lights fitting</h3>
+                      <p>
+                          <b>What's covered in the plan?</b>
+                          <br/>Light fittings including wall lights, tube lights, CFL, LED etc.
+                          <br/>Damaged bulb or light holder change
+                          <br/>Bulb or tube light flickering
+                          <br/>Tube light frame change
+                          <br/>Tube light starter change
+                      </p>
+                      <p><b>Other light installations - as per actual rate</b></p>
+                      <div class="btns">
+                          <a class="btn btn-primary" href="#">BOOK NOW</a>
+                      </div>
+                  </div>
+                  <div class="col-sm-5 col-sm-offset-1">
+                      <img src="/img/lamps-and-lights-400.jpg" style="height: 267px;width: 400px;" alt="Lamps and Light Fittings at Mr. Switch"/>
+                  </div>
+              </div>
+              <div class="row service">
+                  <div class="col-sm-6">
+                      <h3>Power outlet and socket repair</h3>
+                      <p>
+                          <b>What's covered in the plan?</b>
+                          <br/>Sparking in sockets
+                          <br/>Socket burn
+                          <br/>Wiring problem in socket
+                          <br/>broken socket replacement
+                      </p>
+                      <p><b>Other socket/outlet repair work - As per actual rate</b></p>
+                      <div class="btns">
+                          <a class="btn btn-primary" href="#">BOOK NOW</a>
+                      </div>
+                  </div>
+                  <div class="col-sm-5 col-sm-offset-1">
+                      <img src="/img/wall-socket-400.jpg" alt="Plug and Socket repair at Mr. Switch"/>
+                  </div>
+              </div>
+              <div class="row service">
+                  <div class="col-sm-6">
+                      <h3>Inverter Repair or Installation</h3>
+                      <p>
+                          <b>What's covered in the plan?</b>
+                          <br/>Blown Fuse
+                          <br/>Wiring issues
+                          <br/>Faulty inverter fan
+                          <br/>Faulty cable or cord
+                          <br/>Faulty plug
+                      </p>
+                      <p><b>Other inverter work - as per actual rate</b></p>
+                      <div class="btns">
+                          <a class="btn btn-primary" href="#">BOOK NOW</a>
+                      </div>
+                  </div>
+                  <div class="col-sm-5 col-sm-offset-1">
+                      <img src="/img/inverter.jpeg" alt="Inverter repair and installation at Mr. Switch"/>
+                  </div>
+              </div>
+              <div class="row service">
+                  <div class="col-sm-6">
+                      <h3>AC Repair or Installation</h3>
+                      <p>
+                          <b>What's covered in the plan?</b>
+                          <br/>AC switch installation/repair
+                          <br/>AC stabilizer installation/repair
+                          <br/>Wiring issues
+                          <br/>Faulty cable or cord
+                          <br/>Faulty plug
+                      </p>
+                      <p><b>Other AC work - as per actual rate</b></p>
+                      <div class="btns">
+                          <a class="btn btn-primary" href="#">BOOK NOW</a>
+                      </div>
+                  </div>
+                  <div class="col-sm-5 col-sm-offset-1">
+                      <img src="/img/ac-repair-400.jpg" alt="AC repair and installation at Mr. Switch"/>
+                  </div>
+              </div>
+              <div class="row service text-center">
+                  <div class="col-sm-12">
+                      <h3>Something else? Get the rates</h3>
+                      <p>Looking for something that isn't covered in the plans? No worries! We provide
+                          extensive range of electrical services at very affordable rates. Click the
+                          link below to check the full service catalog.
+                      </p>
+                      <div class="btns">
+                          <a class="btn btn-primary" href="/service-rates">CHECK RATES</a>
+                      </div>
+                  </div>
               </div>
           </div>
-      </div>
+      </section>
   </div>
-  
+
+  <hr>
+
+  <div class="testimonials">
+      <h1 class="text-center">What our Customers are saying?</h1>
+      <section class="content-19">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-7">
+                      <div class="quote">
+                          <div class="quote-text">
+                              Excellent work done by you and I would proudly recommend your company for
+                              all further works of Sohan Lal Commodities.
+                          </div>
+                          <div class="quote-author">
+                              {{--<div class="quote-author-photo"></div>--}}
+                              <div class="quote-author-name">
+                                  Sandeep Sabharwal, CEO - SohalLal Commodities
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-3 col-sm-offset-1">
+                      <div class="quote">
+                          <div class="quote-author">
+                              {{--<div class="quote-author-photo"></div>--}}
+                              <div class="quote-author-name">
+                                  Ramesh Kochar, MD - Jaguar Overseas
+                              </div>
+                          </div>
+                          {{--<div class="quote-date">25 MINUTES AGO</div>--}}
+                          <div class="quote-text">
+                              The methodical planning and execution is excellent.
+                              Great show, more success and laurels with you always and every time.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+
+
 
   @include('partials.footer')
 

@@ -13,7 +13,7 @@
 					<h3 class="text-center">PRIVACY POLICY</h3>
 					<br>
 					<br>
-					<h6 class="last-updated">Last Updated on July 2nd, 2015</h6>
+					<h6 class="last-updated">Last Updated on August 3rd, 2015</h6>
 
 					<dl>
 						<dt>SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?</dt>
@@ -43,8 +43,9 @@
 							<b>How do I withdraw my consent?</b><br>
 							
 							If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, 
-							for the continued collection, use or disclosure of your information, at anytime, by contacting 
-							us at [___Company Contact Email___] or mailing us at: [___Company Office Address___].
+							for the continued collection, use or disclosure of your information, at anytime, by contacting us at
+                            info@mrswitch.in or mailing us at: JE Infratech Services Pvt, G-21, Ground Floor, Namdhari Chambers,
+                            DB Gupta Road, Karol Bagh, New Delhi, DL, 110005, India
 						</dd>
 
 						<dt>SECTION 3 - DISCLOSURE</dt>
@@ -130,17 +131,16 @@
 
 						<dt>QUESTIONS AND CONTACT INFORMATION</dt>
 						<dd>
-							If you would like to: access, correct, amend or delete any personal information we have about you, register 
-							a complaint, or simply want more information contact our Privacy Compliance Officer at 
-							[___Company Contact Email___] or by mail at [___Company Office Address___]
+                            If you would like to: access, correct, amend or delete any personal information we have about you, register a
+                            complaint, or simply want more information contact our Privacy Compliance Officer at info@mrswitch.in or by
+                            mail at JE Infratech Services Pvt Ltd
 
 							<br>
 							<br>
 							[Re: Privacy Compliance Officer]
 							<br>
-							[G-21, 9/54, Namdhari Chambers, D B Gupta Road, New Delhi India 110005]
+							[G-21, Ground Floor, Namdhari Chambers, DB Gupta Road, Karol Bagh, New Delhi, DL, 110005, India]
 						</dd>
-
 					</dl>
 				</div>
 			</div>

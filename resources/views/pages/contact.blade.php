@@ -11,22 +11,22 @@
 	      <div class="row">
 	        <div class="col-sm-5">
 	          <h3>Get in touch with us</h3>
-	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	          <p>We love to hear from our customers. Call us or shoot an email.</p>
 	          <div class="links">
-	            <a href="tel:09873598387"><span class="fui-phone"></span> 011 - 4557 4846</a>
+	            <a href="tel:01145574846"><span class="fui-phone"></span> 011 - 4557 4846</a>
 	            <br>
 	            <a href="mailto:info@mrswitch.in"><span class="fui-mail"></span> info@mrswitch.in</a>
 	          </div>
 	          <h6>Where to find us</h6>
-	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	          <p>Locate us on the map.</p>
 	          <div class="map">
 	            <!--map-->
 	            <iframe id="address-map" src="" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 	          </div>
 	        </div>
 	        <div class="col-sm-6 col-sm-offset-1">
-	          <h3>You can mail us</h3>
-	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	          <h3>Want to partner with us? </h3>
+	          <p>Fill out the form below to submit your interest.</p>
 	          	@if (session('status'))
 				    <div class="alert alert-success">
 				        {{ session('status') }}
@@ -46,7 +46,7 @@
 	            <input type="text" class="form-control" name="name" required>
 	            <label class="h6">E-mail</label>
 	            <input type="email" class="form-control" name="email" required>
-	            <label class="h6">Message</label>
+	            <label class="h6">How can we help you?</label>
 	            <textarea rows="7" class="form-control" name="message"></textarea>
 	            <button type="submit" class="btn btn-primary"><span class="fui-mail"></span></button>
 	          {!! Form::close() !!}

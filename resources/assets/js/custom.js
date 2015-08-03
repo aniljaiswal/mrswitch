@@ -21,7 +21,7 @@ $('#subscribe-form').submit(function(event)
           $('#email-input').val('');
           messageBox.hasClass('alert-danger') ? messageBox.removeClass('alert-danger') : messageBox.addClass('alert-success');
           messageBox
-            .text("You're successfully subscribed!")
+            .text("Successfully subscribed!")
             .delay(4000)
             .fadeOut(2500)
             .show();
@@ -36,7 +36,7 @@ $('#subscribe-form').submit(function(event)
   else
   {
     messageBox.hasClass('alert-success') ? messageBox.removeClass('alert-success') : messageBox.addClass('alert-danger');
-    messageBox.show().text('Please enter a valid email').show().delay(2000).fadeOut(2500);
+    messageBox.show().text('Enter a valid email!').show().delay(2000).fadeOut(2500);
   }
 
 });

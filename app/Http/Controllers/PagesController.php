@@ -10,6 +10,10 @@ use App\Subscriber;
 use App\Jobs\SendNewsletterSubscribedEmail;
 use App\Jobs\SendContactFormEmail;
 
+/**
+ * Class PagesController
+ * @package App\Http\Controllers
+ */
 class PagesController extends Controller
 {
     /**
@@ -19,7 +23,8 @@ class PagesController extends Controller
      */
     public function about()
     {
-        //
+        $title = 'Mr. Switch | About us';
+        return view('pages.about', compact('title'));
     }
 
     /**
@@ -29,13 +34,13 @@ class PagesController extends Controller
      */
     public function getContact()
     {
-        $title = 'Contact us | Mr. Switch';
+        $title = 'Mr. Switch | Contact us';
         return view('pages.contact', compact('title'));
     }
 
     /**
      * Sends a newly submitted contact us form through email.
-     *
+     * @param Request $request
      * @return Response
      */
     public function postContact(Request $request)
@@ -63,7 +68,7 @@ class PagesController extends Controller
      */
     public function privacy()
     {
-        $title = 'Mr. Switch | Privacy Poliy';
+        $title = 'Mr. Switch | Privacy Policy';
         return view('pages.privacy', compact('title'));
     }
 
@@ -85,7 +90,8 @@ class PagesController extends Controller
      */
     public function refunds()
     {
-        //
+        $title = 'Mr. Switch | Cancellations and Refunds';
+        return view('pages.refunds', compact('title'));
     }
 
     /**
@@ -95,7 +101,7 @@ class PagesController extends Controller
      */
     public function pricing()
     {
-        $title = 'Learn about Pricing and plans | Mr. Switch';
+        $title = 'Mr. Switch | Learn more about Pricing';
         return view('pages.pricing', compact('title'));
     }
 
@@ -124,6 +130,6 @@ class PagesController extends Controller
      */
     public function careers()
     {
-        return view('pages.careers')->with('title', 'Join Us | Mr. Switch');
+        return view('pages.careers')->with('title', 'Join the Team | Mr. Switch - Careers');
     }
 }

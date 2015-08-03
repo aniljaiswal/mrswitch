@@ -19,8 +19,18 @@
 	
 	<script src="{{ elixir('js/all.js') }}"></script>
     <script type="text/javascript" async defer src="https://apis.google.com/js/platform.js?publisherid=114849396444703717315"></script>
-    <!-- Start of Inbox Widget script -->
-    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","mrswitch.zendesk.com");/*]]>*/</script>
-    <!-- End of Inbox Widget script -->
+    <script src="https://cdn.supportkit.io/supportkit.min.js"></script>
+    <script type="text/javascript">
+        SupportKit.init({appToken: '532kyj8cpzal6xmkcv2ep8zko'});
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-65895567-1', 'auto');
+        ga('require', 'linkid', 'linkid.js');
+        ga('send', 'pageview');
+    </script>
 </body>
 </html>

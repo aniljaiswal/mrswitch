@@ -18,8 +18,6 @@ class SendNewsletterSubscribedEmail extends Job implements SelfHandling, ShouldQ
 
     /**
      * Create a new job instance.
-     *
-     * @return void
      */
     public function __construct(Subscriber $subscriber)
     {
@@ -28,14 +26,13 @@ class SendNewsletterSubscribedEmail extends Job implements SelfHandling, ShouldQ
 
     /**
      * Execute the job.
-     *
      * @return void
      */
     public function handle(Mailer $mailer)
     {
         $mailer->send('emails.newsletters.subscribed', ['subscriber' => $this->subscriber], function($message){
             
-            $message->from('hello@mrswitch.in', 'Mr. Switch');
+            $message->from('info@mrswitch.in', 'Mr. Switch');
 
             $message->subject('Your newsletter subscription is confirmed');
 

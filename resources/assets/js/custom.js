@@ -18,6 +18,7 @@ $('#subscribe-form').submit(function(event)
       dataType : "json",
       data : ({email: email, _token: token}),
       success : function(data) {
+          mixpanel.track("User Subscribed to newsletter");
           $('#email-input').val('');
           messageBox.hasClass('alert-danger') ? messageBox.removeClass('alert-danger') : messageBox.addClass('alert-success');
           messageBox
@@ -49,6 +50,7 @@ function check_submitted()
     $('#ss-form > div.clearfix').remove();
     $('.signup-form > form')
       .append('<p class="lead" style="color:#999;margin-top:20px">Thank you for your interest. Our representative will get back to you within 60 minutes.</p>');
+    mixpanel.track("User submitted the get started form");
   }
 }
 

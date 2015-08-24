@@ -151,7 +151,7 @@ return [
          * 
          */
         Zizaco\Entrust\EntrustServiceProvider::class,
-        Roumen\Sitemap\SitemapServiceProvider::class,
+        // Roumen\Sitemap\SitemapServiceProvider::class,
 
     ],
 

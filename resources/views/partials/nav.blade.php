@@ -23,11 +23,16 @@
                 <div class="collapse navbar-collapse">
                     <?php $menuItems = ['FEATURES','PRICING','SERVICES']; ?>
                     <ul class="nav">
-                            <li><a href="/">HOME</a></li>
+                        <li><a href="/">HOME</a></li>
                         @foreach($menuItems as $name)
-                            <li><a href="/#{{ strtolower($name) }}">{{ $name }}</a></li>
+                        <li><a href="/#{{ strtolower($name) }}">{{ $name }}</a></li>
                         @endforeach
-                            <li><a href="/contact" class="{{ isset($activeMenu) && $activeMenu == 'CONTACT' ? 'active' : ''}}">CONTACT</a></li>
+                        <li><a href="/contact" class="{{ isset($activeMenu) && $activeMenu == 'CONTACT' ? 'active' : ''}}">CONTACT</a></li>
+                        <li class="button-outline">
+                            <a href="/auth/login" class="{{ isset($activeMenu) && $activeMenu == 'LOG IN' ? 'active' : ''}}">
+                                <b>LOG IN</b>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

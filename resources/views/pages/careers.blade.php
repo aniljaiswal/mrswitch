@@ -13,7 +13,6 @@
 					<h3 class="text-center">JOIN US!</h3>
 					<br>
 					<br>
-					<h6 class="last-updated">Last updated on 06th June, 2015</h6>
 					<div class="recruitbox">
 						<script type="text/javascript" id="rbox-loader-script">
 							if(!window._rbox){

@@ -47,3 +47,16 @@ Route::get('careers', 'PagesController@careers');
 
 //Rates Page
 //Route::get('service-rates', 'PagesController@pricing');
+
+/**
+ *  Authentication Routes
+ */
+
+Route::controllers([
+  'auth' => 'Auth\AuthController',
+  'password' => 'Auth\PasswordController',
+]);
+
+/**
+ *  Profile Page routes
+ */

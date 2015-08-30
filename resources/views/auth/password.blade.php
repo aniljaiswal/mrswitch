@@ -1,52 +1,41 @@
-
 @extends('pages.default')
-
 
 @section('content')
 
-<!-- resources/views/auth/password.blade.php -->
+<div class="page-wrapper custom-nav static-pages">
+    
+    @include('partials.nav')
 
-<div class="container">
-	<div id="passwordbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                  
-        <div class="panel panel-info" >
-            
-            <div class="panel-heading">
-                <div class="panel-title">Forgot Password?</div>
-            </div>
+    <section class="header-6 v-center">
 
-			<div style="padding-top:30px" class="panel-body" >
-				
-				@if (count($errors) > 0 )
-                    <div id="password-alert" class="alert alert-danger col-sm-12">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
+        <div class="container">
+            <div id="formbox" style="margin-top:0px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                  
+                <div class="panel panel-info" >
+                    <legend>
+                        Reset Password
+                    </legend>
+
+                    <div style="padding-top:30px" class="panel-body" >
+                       
+                       @include('partials.errors')
+
+                        <form id="formArea" class="form-horizontal" role="form" method="POST" action="/password/email">
+                            {!! csrf_field() !!}
+                            
+                            <input type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Email Address" autocomplete="off">
+
+                            <input type="submit" name="commit" value="Reset my password" />
+
+                        </form>
                     </div>
-                @endif
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    
+    @include('partials.footer')
 
-				<form method="POST" action="/password/email" class="form-horizontal" role="form">
-				    {!! csrf_field() !!}
-
-				    <div class="form-group">
-				       	<label for="email" class="col-md-3 control-label">Email</label>
-			            <div class="col-md-9">
-			                <input type="text" class="form-control" name="email" placeholder="Email Address" value="{{ old('email') }}">
-			            </div>
-				    </div>
-
-				    <div class="form-group">
-			            <!-- Button -->                                        
-			            <div class="col-md-offset-3 col-md-9">
-			                <button id="btn-signup" type="submit" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp;Send Password Reset Link</button>
-			            </div>
-			        </div>
-
-				</form>
-			</div>
-		</div>
-	</div>
 </div>
 
 @stop

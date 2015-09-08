@@ -51,7 +51,6 @@ Route::get('careers', 'PagesController@careers');
 /**
  *  Authentication Routes
  */
-
 Route::controllers([
   'auth' => 'Auth\AuthController',
   'password' => 'Auth\PasswordController',
@@ -60,3 +59,6 @@ Route::controllers([
 /**
  *  Profile Page routes
  */
+Route::group(['prefix' => 'profile'], function () {
+    Route::get('/index', 'ProfileController@index');
+});

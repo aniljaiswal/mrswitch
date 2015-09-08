@@ -26,7 +26,7 @@ class AuthController extends Controller
     /**
      *  Redirect to after successful login
      */
-    protected $redirectPath = '/home';
+    protected $redirectPath = '/profile/index';
 
     /**
      * Create a new authentication controller instance.

@@ -1,4 +1,4 @@
-@extends('pages.default')
+@extends('pages.static-layout')
 
 @section('content')
 
@@ -33,7 +33,7 @@
                       <div class="clearfix">
                         <input placeholder="Name" type="text" name="entry.589106005" value="" class="form-control" id="entry_589106005" dir="auto" aria-label="Name  " aria-required="true" required="" title="">
                         <input placeholder="Phone" type="text" name="entry.1689824019" value="" class="form-control" id="entry_1689824019" dir="auto" aria-label="Phone Number  Please enter a valid number." aria-required="true" required="" pattern=".*^(?:\+91(?:-)?|0\d{2,4}-|0|)\d{7,10}$.*" title="Please enter a valid number.">
-                        <input placeholder="Email" type="email" name="entry.1805097311" value="" class="form-control" id="entry_1805097311" dir="auto" aria-label="Email Address  Must be a valid email address" aria-required="true" required="" title="Must be a valid email address">                        
+                        <input placeholder="Email" type="email" name="entry.1805097311" value="" class="form-control" id="entry_1805097311" dir="auto" aria-label="Email Address  Must be a valid email address" aria-required="true" required="" title="Must be a valid email address">
                         <input type="hidden" name="draftResponse" value="[,,&quot;4766546142149717159&quot;]">
                         <input type="hidden" name="pageHistory" value="0">
                         <input type="hidden" name="fbzx" value="4766546142149717159">
@@ -329,7 +329,7 @@
                   <div class="cta-wrapper">
                     <h3>Need a custom plan?</h3>
                     <p>Just tell us what you need and we’d be happy to help.</p>
-                  </div>  
+                  </div>
                 </div>
                 <div class="col-sm-3">
                   <a href="/contact" class="btn btn-default btn-lg">Contact Us</a>

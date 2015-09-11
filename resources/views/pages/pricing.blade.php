@@ -1,4 +1,4 @@
-@extends('pages.default')
+@extends('pages.static-layout')
 
 @section('content')
 
@@ -111,7 +111,7 @@ Without iconic symbolsreally finish your work - for clearly understand.
         					<div class="cta-wrapper">
 	        					<h3>Need a bigger plan?</h3>
 	        					<p>Just tell us what you need and we’d be happy to help.</p>
-	        				</div>	
+	        				</div>
         				</div>
         				<div class="col-sm-3">
         					<a href="/contact" class="btn btn-default btn-lg">Contact Us</a>

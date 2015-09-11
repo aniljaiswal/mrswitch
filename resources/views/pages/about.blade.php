@@ -1,4 +1,4 @@
-@extends('pages.default')
+@extends('pages.static-layout')
 
 @section('content')
 

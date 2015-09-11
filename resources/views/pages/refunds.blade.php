@@ -1,4 +1,4 @@
-@extends('pages.default')
+@extends('pages.static-layout')
 
 @section('content')
 
@@ -20,11 +20,11 @@
                         <dl>
                             <dt>Cancellation Policy</dt>
                             <dd>
-                                Cancellation of service renewals for electrical services must be made at least seven 7 
+                                Cancellation of service renewals for electrical services must be made at least seven 7
                                 business days prior to the end of the current service period.
                                 <br/>
                                 <br/>
-                                Requests received later than seven 7 business days prior to the end of the current 
+                                Requests received later than seven 7 business days prior to the end of the current
                                 service period will be treated as cancellation of services for the next service period.
                             </dd>
                             <dt>Refund Policy</dt>

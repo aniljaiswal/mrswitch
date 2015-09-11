@@ -16,7 +16,7 @@
  * Home Page
  */
 Route::get('/', function () {
-    return view('welcome')->with('title', 'Mr. Switch | 24x7 Electricians in Delhi & NCR. Book your service now.');
+    return view('pages.welcome')->with('title', 'Mr. Switch | 24x7 Electricians in Delhi & NCR. Book your service now.');
 });
 
 /**

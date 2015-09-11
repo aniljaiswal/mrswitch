@@ -1,4 +1,4 @@
-@extends('pages.default')
+@extends('pages.static-layout')
 
 @section('content')
 
@@ -30,7 +30,7 @@
 				</div>
 			</div>
 		</div>
-	
+
 	</section>
 
 	@include('partials.footer')

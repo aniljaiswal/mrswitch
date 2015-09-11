@@ -14,6 +14,7 @@ require('laravel-elixir-codeception');
  */
 
 elixir(function(mix) {
+    //Static pages layout CSS
     mix.styles([
         "libs/bootstrap.min.css",
         "libs/flat-ui.css",
@@ -22,6 +23,7 @@ elixir(function(mix) {
         "app.css"
     ], "public/css/");
 
+    //Static  pages layout JS
     mix.scripts([
     	"libs/jquery.min.js",
     	"libs/bootstrap.min.js",
@@ -31,6 +33,19 @@ elixir(function(mix) {
     	"custom.js"
     ], "public/js/");
 
-    mix.version(["css/all.css", "js/all.js"]);
+    //Profile pages layout CSS
+    mix.styles([
+        "libs/bootstrap.min.css",
+        "profile.css",
+    ], "public/css/app.css");
+
+    //Profile pages layout CSS
+    mix.scripts([
+    	"libs/jquery.min.js",
+    	"libs/bootstrap.min.js",
+    	"custom.js"
+    ], "public/js/app.js");
+
+    mix.version(["css/all.css", "js/all.js", "css/app.css", "js/app.js"]);
 
 });

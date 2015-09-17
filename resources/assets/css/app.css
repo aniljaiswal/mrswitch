@@ -826,7 +826,7 @@ section * {
 }
 /* header */
 /**
- * Header 6 stylesheet  
+ * Header 6 stylesheet
  * */
 .header-6 {
   z-index: 100;
@@ -993,6 +993,13 @@ section * {
   color: #bdc3c7;
   text-align: center;
 }
+.header-6-sub .background {
+  background-image: url("/img/happy-children-hero.jpg");
+  opacity: 60;
+  filter: alpha(opacity=6000);
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
 @media (max-width: 768px) {
   .header-6-sub {
     padding-top: 150px;
@@ -1146,7 +1153,7 @@ section * {
 }
 /* contents */
 /**
- * Content 3 stylesheet  
+ * Content 3 stylesheet
  * */
 .content-3 {
   padding-top: 130px;
@@ -1268,7 +1275,7 @@ section * {
 }
 /* footer */
 /**
- * Footer 10 stylesheet  
+ * Footer 10 stylesheet
  * */
 .footer-10 {
   position: relative;
@@ -1451,13 +1458,6 @@ footer > .container {
     margin-bottom: 40px;
   }
 }
-.header-6-sub .background {
-  background-image: url("/img/happy-children-hero.jpg");
-  opacity: 60;
-  filter: alpha(opacity=6000);
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-}
 
 .footer-10 {
   margin-top: 0px;
@@ -1507,7 +1507,7 @@ footer > .container {
 }
 
 .custom-nav .header-6 .navbar .social-btns > a > :first-child{
- color: #2E3234; 
+ color: #2E3234;
 }
 
 .custom-nav .header-6 .navbar-header > button{
@@ -1855,7 +1855,7 @@ footer > .container {
 }
 
 /**
- * Content 8 stylesheet  
+ * Content 8 stylesheet
  * */
 .content-8 {
   padding-top: 100px;
@@ -1952,7 +1952,7 @@ footer > .container {
 }
 
 /**
- * Content 6 stylesheet  
+ * Content 6 stylesheet
  * */
 .content-6 {
   position: relative;
@@ -2071,7 +2071,7 @@ footer > .container {
 
 /* === CONTACT US PAGE ===*/
 /**
- * Copntact 3 stylesheet  
+ * Copntact 3 stylesheet
  * */
 .contacts-3 {
   padding-top: 250px;
@@ -2423,9 +2423,9 @@ footer > .container {
 }
 
 #formArea > input[type='text'],
-#formArea > input[type='email'], 
-#formArea > input[type='password'], 
-#formArea > input[type='number'], 
+#formArea > input[type='email'],
+#formArea > input[type='password'],
+#formArea > input[type='number'],
 #formArea > input[type='submit'] {
   background: #fcfcfc;
   border: 2px solid #e7e7e7;
@@ -2441,9 +2441,9 @@ footer > .container {
 }
 
 #formArea > input[type='text']:focus,
-#formArea > input[type='email']:focus, 
-#formArea > input[type='password']:focus, 
-#formArea > input[type='number']:focus, 
+#formArea > input[type='email']:focus,
+#formArea > input[type='password']:focus,
+#formArea > input[type='number']:focus,
 #formArea > input[type='submit']:focus {
   border-color: #918D8D;
   box-shadow: none;

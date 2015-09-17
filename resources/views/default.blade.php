@@ -16,7 +16,7 @@
 </head>
 <body>
 
-	  @yield('content')
+	@yield('content')
 
     @if(App::environment('production'))
         @include('partials.analytics')
@@ -24,9 +24,11 @@
 
     @yield('scripts')
 
-    <script src="https://cdn.supportkit.io/supportkit.min.js"></script>
-    <script type="text/javascript">
-        SupportKit.init({appToken: '532kyj8cpzal6xmkcv2ep8zko'});
-    </script>
+    @if(App::environment('production'))
+        <script src="https://cdn.supportkit.io/supportkit.min.js"></script>
+        <script type="text/javascript">
+            SupportKit.init({appToken: '532kyj8cpzal6xmkcv2ep8zko'});
+        </script>
+    @endif
 </body>
 </html>

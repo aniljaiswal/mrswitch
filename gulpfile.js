@@ -36,6 +36,9 @@ elixir(function(mix) {
     //Profile pages layout CSS
     mix.styles([
         "libs/bootstrap.min.css",
+        "libs/flat-ui.css",
+        "libs/icon-font.css",
+        "libs/animations.css",
         "profile.css",
     ], "public/css/app.css");
 

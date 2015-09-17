@@ -59,14 +59,16 @@
         </div>
     </div>
     <div class="mixpanel text-center">
-        <a href="https://mixpanel.com/f/partner">
-            <img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" />
-        </a>
+        @if(App::environment('production'))
+            <a href="https://mixpanel.com/f/partner">
+                <img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" />
+            </a>
+        @endif
     </div>
     <div class="row copy-terms">
         <div class="terms">
-            <small>Our  
-                <a href="/terms">Terms of Service</a> and 
+            <small>Our
+                <a href="/terms">Terms of Service</a> and
                 <a href="/privacy">Privacy Policy</a>.
             </small>
         </div>

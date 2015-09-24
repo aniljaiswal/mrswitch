@@ -17,6 +17,7 @@ elixir(function(mix) {
     //Static pages layout CSS
     mix.styles([
         "libs/bootstrap.min.css",
+        "libs/bootstrap-select.min.css",
         "libs/flat-ui.css",
         "libs/icon-font.css",
         "libs/animations.css",
@@ -27,6 +28,7 @@ elixir(function(mix) {
     mix.scripts([
     	"libs/jquery.min.js",
     	"libs/bootstrap.min.js",
+        "libs/bootstrap-select.min.js",
     	"libs/modernizr.custom.js",
     	"libs/page-transitions.js",
     	"libs/startup-kit.js",
@@ -36,9 +38,12 @@ elixir(function(mix) {
     //Profile pages layout CSS
     mix.styles([
         "libs/bootstrap.min.css",
+        "libs/bootstrap-select.min.css",
         "libs/flat-ui.css",
         "libs/icon-font.css",
         "libs/animations.css",
+        "libs/jquery-datetimepicker.css",
+        "app.css",
         "profile.css",
     ], "public/css/app.css");
 
@@ -46,6 +51,11 @@ elixir(function(mix) {
     mix.scripts([
     	"libs/jquery.min.js",
     	"libs/bootstrap.min.js",
+        "libs/bootstrap-select.min.js",
+        "libs/modernizr.custom.js",
+    	"libs/page-transitions.js",
+    	"libs/startup-kit.js",
+        "libs/jquery-datetimepicker.min.js",
     	"custom.js"
     ], "public/js/app.js");
 

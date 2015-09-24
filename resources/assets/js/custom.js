@@ -2,7 +2,7 @@
 //Newsletter subscription handler script
 var submitted=false;
 
-$('#subscribe-form').submit(function(event) 
+$('#subscribe-form').submit(function(event)
 {
   event.preventDefault();
   var email = $('#email-input').val();
@@ -45,7 +45,7 @@ $('#subscribe-form').submit(function(event)
 //Enquiry form submission on home page
 function check_submitted()
 {
-  if(submitted) 
+  if(submitted)
   {
     $('#ss-form > div.clearfix').remove();
     $('.signup-form > form')
@@ -61,19 +61,19 @@ $(window).load(function(){
 
 /** jQuery Scroll to Top Control script- (c) Dynamic Drive DHTML code library: http://www.dynamicdrive.com. */
 var scrolltotop={
-  
+
   setting: {startline:100, scrollto: 0, scrollduration:1000, fadeduration:[500, 100]},
-  controlHTML: '<i class="fui-arrow-up backtotop"></i>', 
-  controlattrs: {offsetx:10, offsety:10}, 
+  controlHTML: '<i class="fui-arrow-up backtotop"></i>',
+  controlattrs: {offsetx:10, offsety:10},
   anchorkeyword: '#top',
 
   state: {isvisible:false, shouldvisible:false},
 
   scrollup:function(){
-    if (!this.cssfixedsupport) 
-      this.$control.css({opacity:0}) 
+    if (!this.cssfixedsupport)
+      this.$control.css({opacity:0})
     var dest=isNaN(this.setting.scrollto)? this.setting.scrollto : parseInt(this.setting.scrollto)
-    if (typeof dest=="string" && jQuery('#'+dest).length==1) 
+    if (typeof dest=="string" && jQuery('#'+dest).length==1)
       dest=jQuery('#'+dest).offset().top
     else
       dest=0
@@ -101,7 +101,7 @@ var scrolltotop={
       this.state.isvisible=false
     }
   },
-  
+
   init:function(){
     jQuery(document).ready(function($){
       var mainobj=scrolltotop
@@ -128,3 +128,8 @@ var scrolltotop={
 }
 
 scrolltotop.init()
+
+/**/
+$('.datetimepicker').datetimepicker({
+    format:'Y-m-d H:i'
+});

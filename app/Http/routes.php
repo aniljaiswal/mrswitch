@@ -56,6 +56,10 @@ Route::controllers([
   'password' => 'Auth\PasswordController',
 ]);
 
+Route::get('home', function(){
+    return redirect('profile/index');
+});
+
 /**
  *  Profile Page routes
  */

@@ -4,12 +4,11 @@
 
 @include('profile.partials.nav')
 
-<section id="after-header">
+{{-- <section id="after-header">
 	<div class="topic">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4">
-					<!--Placeholder-->
 				</div>
 				<div class="col-sm-8">
 					<ol class="breadcrumb pull-right hidden-xs">
@@ -24,83 +23,67 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> --}}
 
 <section id="mainContent">
 	<div class="container">
 		<div class="row">
-			<aside class="col-left sidebar col-sm-4">
+			<aside class="col-left sidebar col-sm-3">
 				<div class="col-sm-11">
 					<div class="user-avatar text-center">
 						<img class="img-responsive center-block" src="http://localhost.mrswitch.app/skin/frontend/mrswitch/default/images/photo-1.jpg" alt="...">
-						John Doe
-						<p class="text-muted">Project Manager</p>
+						<p>{{Auth::user()->name}}</p>
 					</div>
 					<div class="panel panel-default">
-						<div class="panel-heading">
-							<strong><span>My Account</span></strong>
-						</div>
-						<div class="panel-body">
-							<ul>
-								<li class="current"><strong>Account Dashboard</strong></li>
-								<li><a href="http://localhost.mrswitch.app/customer/account/edit/">Account Information</a></li>
-								<li><a href="http://localhost.mrswitch.app/customer/address/">Address Book</a></li>
-								<li><a href="http://localhost.mrswitch.app/sales/order/history/">My Orders</a></li>
-								<li><a href="http://localhost.mrswitch.app/sales/billing_agreement/">Billing Agreements</a></li>
-								<li><a href="http://localhost.mrswitch.app/sales/recurring_profile/">Recurring Profiles</a></li>
-								<li><a href="http://localhost.mrswitch.app/review/customer/">My Product Reviews</a></li>
-								<li><a href="http://localhost.mrswitch.app/tag/customer/">My Tags</a></li>
-								<li><a href="http://localhost.mrswitch.app/oauth/customer_token/">My Applications</a></li>
-								<li><a href="http://localhost.mrswitch.app/newsletter/manage/">Newsletter Subscriptions</a></li>
-								<li class="last"><a href="http://localhost.mrswitch.app/downloadable/customer/products/">My Downloadable Products</a></li>
-							</ul>
-						</div>
+						<ul>
+							<li class="current"><strong>Account Dashboard</strong></li>
+							<li><a href="">Edit Profile</a></li>
+							<li><a href="">My Subscriptions</a></li>
+							<li><a href="">My Requests</a></li>
+							<li><a href="">Payment History</a></li>
+							<li><a href=""> Help & Support</a></li>
+						</ul>
 					</div>
 				</div>
 			</aside>
-			<div class="col-main col-sm-8">
-				<div class="my-account"><div class="dashboard">
-					<div class="row">
-						<div class="col-sm-7">
-							<div class="page-title">
-								<h2 class="first-child">My Dashboard</h2>
-							</div>
-							<div class="welcome-msg">
-								<div class="info-board info-board-blue">
-									<h4 class="second-child">Hello, Anil Jaiswal!</h4>
-									<p>From your My Account Dashboard you have the ability to view a snapshot of your recent account activity and update your account information. Select a link below to view or edit information.</p>
+			<div class="col-main col-sm-9">
+				<div class="my-account">
+					<div class="dashboard">
+						<div class="row">
+							<div class="col-sm-7">
+								<ol class="breadcrumb pull-left hidden-xs">
+									<li class="Home">
+										<a href="/" title="Home">Home</a>
+									</li>
+									<li class="Profile">
+										Profile
+									</li>                                                                                            </li>
+								</ol>
+								<div class="page-title clearfix">
+									<h3><strong><u>Book Now</u></strong></h3>
 								</div>
-							</div>
-							<div class="box-head">
-								<h2>Account Information</h2>
-							</div>
-							<div class="col2-set">
-								<div class="col-1">
-									<div class="box">
-										<div class="box-title">
-											<h3>Contact Information</h3>
-											<a href="http://localhost.mrswitch.app/customer/account/edit/">Edit</a>
-										</div>
-										<div class="box-content">
-											<p>
-												Anil Jaiswal<br />
-												er.anil.jaiswal@gmail.com<br />
-												<a href="http://localhost.mrswitch.app/customer/account/edit/changepass/1/">Change Password</a>
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-2">
-									<div class="box">
-										<div class="box-title">
-											<h3>Newsletters</h3>
-											<a href="http://localhost.mrswitch.app/newsletter/manage/">Edit</a>
-										</div>
-										<div class="box-content">
-											<p>
-												You are currently subscribed to 'General Subscription'.                                    </p>
+								<div class="row">
+									<div class="service-form col-sm-12">
+										<form action="">
+											<div class="form-group">
+												<label for="service-time">Choose a time</label>
+												<input type="text" placeholder="yyyy-mm-dd hh:mm" name="service-time" id="service-time" class="form-control datetimepicker">
 											</div>
-										</div>
+											<div class="form-group">
+												<label for="service-type">Select service</label>
+												<select data-style="selectpicker" class="selectpicker" id="service-type" name="service-type">
+													<option value="0">General Electric Work</option>
+													<option value="1">MCB tripping</option>
+													<option value="2">Tubelight change</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="comments">Description(Optional):</label>
+												<textarea class="form-control" name="comments" rows="5" cols="40"></textarea>
+											</div>
+											<button type="submit" class="btn btn-wide btn-primary mrm">Submit</button>
+											<button type="reset" class="btn btn-wide btn-default">Cancel</button>
+										</form>
 									</div>
 								</div>
 							</div>
@@ -115,28 +98,7 @@
 											</div>
 											<div class="panel panel-default">
 												<div class="panel-heading">
-													<h4>Default Billing Address</h4>
-												</div>
-												<div class="panel-body">
-													<address>
-														Renuka Bazala<br/>
-
-														D/o Rattan Lal, Village Nandpur Gujran<br />
-														P/o Miran Sahib, Tehsil R. S. Pura<br />
-
-
-														Jammu,  Jammu &amp; Kashmir, 181101<br/>
-														India<br/>
-														T: 09596058686
-
-														<br />
-														<a href="http://localhost.mrswitch.app/customer/address/edit/id/4/">Edit Address</a>
-													</address>
-												</div>
-											</div>
-											<div class="panel panel-default">
-												<div class="panel-heading">
-													<h4>Default Shipping Address</h4>
+													<h4>Address</h4>
 												</div>
 												<div class="panel-body">
 													<address>
@@ -159,11 +121,13 @@
 									</div>
 								</div>
 							</div>
+						</div>
+						<div class="row">
 							<div class="col-sm-12">
 								<hr class="arrow-down">
 								<div class="box-account box-recent">
 									<div class="box-head">
-										<h2>Recent Orders</h2>
+										<h3><strong><u>Recent Visits</u></strong></h3>
 										<a href="http://localhost.mrswitch.app/sales/order/history/">View All</a>    </div>
 										<div class="custom-table-wrapper">
 											<table class="data-table table" id="my-orders-table">

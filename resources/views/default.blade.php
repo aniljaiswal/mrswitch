@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="token" id="token" content="{{csrf_token()}}">
     <meta name="google-site-verification" content="nvAxuckUOzII4uyL6uFdsbzol51YQ6W4Goo4GoE8bq0" />
 
     <title>@if(isset($title)){{$title}} @else Mr. Switch | 24x7 Electricians in Delhi, NCR.@endif</title>

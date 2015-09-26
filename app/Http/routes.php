@@ -66,3 +66,19 @@ Route::get('home', function(){
 Route::group(['prefix' => 'profile'], function () {
     Route::get('/index', 'ProfileController@index');
 });
+
+/**
+ * API routes for different resources
+ */
+ //, 'middleware' => 'api.auth'
+ Route::group(['prefix' => 'api/v1'], function () {
+
+     //Service Booking routes
+     Route::resource('bookings', 'BookingController');
+
+     //Service Status routes
+     Route::resource('service_status', 'ServiceStatusController');
+
+     //Services routes
+     Route::resource('services', 'ServiceController');
+ });

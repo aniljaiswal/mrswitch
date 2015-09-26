@@ -58,13 +58,24 @@ section *{
 
 input.datetimepicker{
     display: inline;
-    width: 170px;
+    width: 190px;
     margin-left: 50px;
 }
 
-.btn-group>.btn:first-child,
-.btn-group >div.dropdown-menu.open{
-    margin-left: 50px;
+select#service-type{
+    display: inline;
+    width: 300px;
+    margin-left: 53px;
+}
+
+.service-booked{
+    margin-top: 10px;
+    max-width: 100%;
+    text-align: center;
+}
+
+#my-bookings-table > thead > tr > th{
+    text-align: center;
 }
 
 

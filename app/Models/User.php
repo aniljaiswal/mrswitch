@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -8,10 +8,11 @@ use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 use Zizaco\Entrust\Traits\EntrustUserTrait;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class User extends Model implements AuthenticatableContract, CanResetPasswordContract
 {
-    use Authenticatable, CanResetPassword, EntrustUserTrait;
+    use Authenticatable, CanResetPassword, EntrustUserTrait, softDeletes;
 
     /**
      * The database table used by the model.
@@ -33,4 +34,12 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
+
+    /**
+     * Get the bookings for the user.
+     */
+    public function bookings()
+    {
+        return $this->hasMany('App\Models\Booking');
+    }
 }

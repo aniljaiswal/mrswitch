@@ -14,6 +14,11 @@ require('laravel-elixir-codeception');
  */
 
 elixir(function(mix) {
+    //Copy Vue.js to libs
+    mix.copy('node_modules/vue/dist/vue.min.js', 'resources/assets/js/libs/vue.min.js');
+    mix.copy('node_modules/vue-resource/dist/vue-resource.min.js', 'resources/assets/js/libs/vue-resource.min.js');
+    mix.copy('node_modules/vue-validator/dist/vue-validator.min.js', 'resources/assets/js/libs/vue-validator.min.js');
+
     //Static pages layout CSS
     mix.styles([
         "libs/bootstrap.min.css",
@@ -47,7 +52,7 @@ elixir(function(mix) {
         "profile.css",
     ], "public/css/app.css");
 
-    //Profile pages layout CSS
+    //Profile pages JS
     mix.scripts([
     	"libs/jquery.min.js",
     	"libs/bootstrap.min.js",
@@ -56,7 +61,11 @@ elixir(function(mix) {
     	"libs/page-transitions.js",
     	"libs/startup-kit.js",
         "libs/jquery-datetimepicker.min.js",
-    	"custom.js"
+        "libs/vue.min.js",
+        "libs/vue-resource.min.js",
+        "libs/vue-validator.min.js",
+    	"custom.js",
+        "backend.js"
     ], "public/js/app.js");
 
     mix.version(["css/all.css", "js/all.js", "css/app.css", "js/app.js"]);

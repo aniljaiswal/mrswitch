@@ -129,7 +129,6 @@ var scrolltotop={
 
 scrolltotop.init()
 
-/**/
 $('.datetimepicker').datetimepicker({
-    format:'Y-m-d H:i'
+    format:'Y-m-d H:i:s'
 });

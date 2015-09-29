@@ -16,6 +16,7 @@ class Kernel extends ConsoleKernel
         \App\Console\Commands\Inspire::class,
         \App\Console\Commands\PopulateServiceStatuses::class,
         \App\Console\Commands\PopulateServices::class,
+        \App\Console\Commands\PopulateRoles::class,
     ];
 
     /**

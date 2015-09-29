@@ -18,4 +18,14 @@ class ProfileController extends Controller
 	{
 		return view('profile.index')->with('title', 'Your Profile - Mr Switch');
 	}
+
+	public function setup()
+	{
+		return view('profile.setup')->with('title', 'Complete your profile - Mr. Switch');
+	}
+
+	public function completeSetup(Request $request)
+	{
+		
+	}
 }

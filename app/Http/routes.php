@@ -16,7 +16,10 @@
  * Home Page
  */
 Route::get('/', function () {
-    return view('pages.welcome')->with('title', 'Mr. Switch | 24x7 Electricians in Delhi & NCR. Book your service now.');
+    if(Auth::check())
+        return redirect('profile/index');
+    else
+        return view('pages.welcome')->with('title', 'Mr. Switch | 24x7 Electricians in Delhi & NCR. Book your service now.');
 });
 
 /**
@@ -56,6 +59,7 @@ Route::controllers([
   'password' => 'Auth\PasswordController',
 ]);
 
+// Override laravel's default behaviour to redirect to /home
 Route::get('home', function(){
     return redirect('profile/index');
 });
@@ -64,14 +68,24 @@ Route::get('home', function(){
  *  Profile Page routes
  */
 Route::group(['prefix' => 'profile'], function () {
-    Route::get('/index', 'ProfileController@index');
+
+    //Initial setup for pending members - confirmation required
+    Route::get('/setup', 'ProfileController@setup');
+
+    Route::post('/setup', 'ProfileController@completeSetup');
+
+    //Protect main profile routes from pending members
+    Route::group(['middleware' => 'user.pending'],function(){
+        Route::get('/index', 'ProfileController@index');
+    });
+
 });
 
 /**
  * API routes for different resources
+ * TODO: use jwt-auth middleware later
  */
- //, 'middleware' => 'api.auth'
- Route::group(['prefix' => 'api/v1'], function () {
+Route::group(['prefix' => 'api/v1', 'middleware' => 'auth'], function () {
 
      //Service Booking routes
      Route::resource('bookings', 'BookingController');
@@ -81,4 +95,4 @@ Route::group(['prefix' => 'profile'], function () {
 
      //Services routes
      Route::resource('services', 'ServiceController');
- });
+});

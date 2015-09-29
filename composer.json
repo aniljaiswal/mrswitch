@@ -14,7 +14,8 @@
         "razorpay/razorpay": "dev-master",
         "illuminate/html": "^5.0@dev",
         "predis/predis": "^1.1@dev",
-        "roumen/sitemap": "2.5.*"
+        "roumen/sitemap": "2.5.*",
+        "tymon/jwt-auth": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -152,6 +152,7 @@ return [
          */
         Zizaco\Entrust\EntrustServiceProvider::class,
         // Roumen\Sitemap\SitemapServiceProvider::class,
+        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
 
     ],
 
@@ -207,6 +208,8 @@ return [
          * Third Party ... 
          */
         'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
+        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+        'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
 
     ],
 

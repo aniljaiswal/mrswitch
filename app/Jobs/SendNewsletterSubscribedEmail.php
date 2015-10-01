@@ -32,7 +32,7 @@ class SendNewsletterSubscribedEmail extends Job implements SelfHandling, ShouldQ
     {
         $mailer->send('emails.newsletters.subscribed', ['subscriber' => $this->subscriber], function($message){
 
-            $message->from('info@mrswitch.in', 'Mr. Switch');
+            $message->from(config.get('mail.from.address'), config.get('mail.from.name'));
 
             $message->subject('Your newsletter subscription is confirmed');
 

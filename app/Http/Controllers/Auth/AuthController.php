@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 use App\Models\User;
 use App\Models\Role;
+use App\Events\UserRegistered;
 
 class AuthController extends Controller
 {
@@ -66,6 +67,8 @@ class AuthController extends Controller
         ]);
 
         $user->attachRole(Role::where('name', '=', 'pending')->first());
+
+        event(new UserRegistered($user));
 
         return $user;
     }

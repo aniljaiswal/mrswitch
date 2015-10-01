@@ -26,14 +26,14 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      *
      * @var array
      */
-    protected $fillable = ['name', 'email', 'password'];
+    protected $fillable = ['name', 'email', 'password', 'email_token'];
 
     /**
      * The attributes excluded from the model's JSON form.
      *
      * @var array
      */
-    protected $hidden = ['password', 'remember_token'];
+    protected $hidden = ['password', 'remember_token', 'email_token', 'email_verified'];
 
     /**
      * Get the bookings for the user.
@@ -41,5 +41,19 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     public function bookings()
     {
         return $this->hasMany('App\Models\Booking');
+    }
+
+    /**
+     * Defining an email verification token with Model Events
+     */
+    public static function boot()
+    {
+        parent::boot();
+
+        static::creating(function($user){
+
+            $user->email_token = str_random(30);
+
+        });
     }
 }

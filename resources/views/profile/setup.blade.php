@@ -5,7 +5,7 @@
 @include('profile.partials.nav')
 
 <section>
-    hello, pending user!
+    Please confirm your email address
 </section>
 
 @include('partials.footer')

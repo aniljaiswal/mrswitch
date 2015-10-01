@@ -15,6 +15,9 @@ class SendBookingConfirmationEmail extends Job implements SelfHandling
 {
     use InteractsWithQueue, SerializesModels;
 
+    /**
+     * @var App\Models\Booking $booking
+     */
     protected $booking;
 
     /**
@@ -36,7 +39,7 @@ class SendBookingConfirmationEmail extends Job implements SelfHandling
     {
         $mailer->send('emails.bookings.confirmed', ['booking' => $this->booking], function($message){
 
-            $message->from('info@mrswitch.in', 'Mr. Switch');
+            $message->from(config.get('mail.from.address'), config.get('mail.from.name'));
 
             $message->subject('Your Booking #: ' . $this->booking->id . ' is confirmed');
 

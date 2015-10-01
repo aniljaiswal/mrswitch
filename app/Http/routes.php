@@ -67,7 +67,7 @@ Route::get('home', function(){
 /**
  *  Profile Page routes
  */
-Route::group(['prefix' => 'profile'], function () {
+Route::group(['prefix' => 'profile', 'middleware' => 'auth'], function () {
 
     //Initial setup for pending members - confirmation required
     Route::get('/setup', 'ProfileController@setup');

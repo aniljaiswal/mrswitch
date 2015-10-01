@@ -7,6 +7,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use Auth;
+use App\Models\User;
+use Bugsnag;
 
 class ProfileController extends Controller
 {
@@ -20,30 +22,35 @@ class ProfileController extends Controller
 	{
 		$user = auth()->user();
 
-		//If user is not pending, redirect to profile/index
-		if(!$user->hasRole('pending'))
+		if(!auth()->user()->roles->isEmpty() && !$user->hasRole('pending'))
 		{
 			return redirect('profile/index');
 		}
 
-		//If user is newly registered and request doesn't not have any token
-		if(is_null($request->tkn))
+		if(!$user->isEmailVerified())
 		{
-			Auth::logout();
+			if(is_null($request->tkn))
+			{
+				Auth::logout();
 
-			return redirect('auth/login')->withErrors('Please check your email for cofirmation link.');
+				return redirect('auth/login')
+					->withErrors('Please check your email for cofirmation link.');
+			}
+
+			$pendingUser = User::whereEmailToken($request->tkn)
+								->firstOrFail()->setEmailVerified();
 		}
 
-		//validate the token and set email_verified to true
+		$request->session()->flash('email_verified', 'true');
 
-		//load the form for completing the profile details
+		$title = 'Complete your profile - Mr. Switch';
 
-
-		return view('profile.setup')->with(['title' => 'Complete your profile - Mr. Switch']);
+		return view('profile.setup', compact('user', 'title'));
 	}
 
 	public function completeSetup(Request $request)
 	{
-
+		dump($request->all());
+		dd('bingo!');
 	}
 }

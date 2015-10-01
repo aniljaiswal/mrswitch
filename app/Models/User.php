@@ -9,6 +9,7 @@ use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 use Zizaco\Entrust\Traits\EntrustUserTrait;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use App\Models\Role;
 
 class User extends Model implements AuthenticatableContract, CanResetPasswordContract
 {
@@ -44,7 +45,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     }
 
     /**
-     * Defining an email verification token with Model Events
+     * Save an email verification token with Model Events
      */
     public static function boot()
     {
@@ -55,5 +56,33 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
             $user->email_token = str_random(30);
 
         });
+    }
+
+    /**
+     * set user email verification to true and nullify the email token
+     */
+    public function setEmailVerified()
+    {
+        $this->email_verified = 1;
+        $this->email_token = null;
+        $this->save();
+
+        return $this;
+    }
+
+    /**
+     *
+     */
+    public function changePendingUserToConfirmed()
+    {
+        $this->detachRole(Role::where('name', '=', 'pending')->first());
+        $this->attachRole(Role::where('name', '=', 'confirmed')->first());
+
+        return $this;
+    }
+
+    public function isEmailVerified()
+    {
+        return $this->email_verified && is_null($this->email_token);
     }
 }

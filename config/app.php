@@ -148,11 +148,12 @@ return [
 
         /*
          * Third Party Service Providers...
-         * 
+         *
          */
         Zizaco\Entrust\EntrustServiceProvider::class,
         // Roumen\Sitemap\SitemapServiceProvider::class,
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+        Bugsnag\BugsnagLaravel\BugsnagLaravelServiceProvider::class,
 
     ],
 
@@ -205,11 +206,12 @@ return [
         'Html'      => Illuminate\Html\HtmlFacade::class,
 
         /*
-         * Third Party ... 
+         * Third Party ...
          */
         'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
         'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
+        'Bugsnag' => Bugsnag\BugsnagLaravel\BugsnagFacade::class,
 
     ],
 

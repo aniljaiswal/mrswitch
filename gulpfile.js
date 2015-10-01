@@ -55,12 +55,13 @@ elixir(function(mix) {
     //Profile pages JS
     mix.scripts([
     	"libs/jquery.min.js",
-    	"libs/bootstrap.min.js",
+    	"libs/jquery-datetimepicker.min.js",
+        "libs/jquery.easing.min.js",
+        "libs/bootstrap.min.js",
         "libs/bootstrap-select.min.js",
         "libs/modernizr.custom.js",
     	"libs/page-transitions.js",
     	"libs/startup-kit.js",
-        "libs/jquery-datetimepicker.min.js",
         "libs/vue.min.js",
         "libs/vue-resource.min.js",
         "libs/vue-validator.min.js",

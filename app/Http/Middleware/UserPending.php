@@ -15,7 +15,7 @@ class UserPending
      */
     public function handle($request, Closure $next)
     {
-        if(auth()->user()->hasRole('pending'))
+        if(auth()->user()->roles->isEmpty() || auth()->user()->hasRole('pending'))
             return redirect('/profile/setup');
 
         return $next($request);

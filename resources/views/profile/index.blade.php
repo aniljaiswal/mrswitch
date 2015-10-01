@@ -58,3 +58,13 @@
 	@include('partials.footer')
 
 @stop
+
+@section('extra_scripts')
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.datetimepicker').datetimepicker({
+			format:'Y-m-d H:i:s'
+		});
+	});
+</script>
+@stop

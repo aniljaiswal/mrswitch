@@ -201,6 +201,21 @@ body > section, footer > .container {
 	background: #27AE60;
 	color: white;
 }
+
+.btn-success {
+    color: #fff;
+    background-color: #2ecc71;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #e74c3c;
+}
+
 .send-otp-btn{
     cursor: pointer;
+}
+
+#otpModal{
+    margin-top: 200px;
 }

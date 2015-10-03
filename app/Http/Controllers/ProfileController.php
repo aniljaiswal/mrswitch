@@ -7,8 +7,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use Auth;
+
 use App\Models\User;
-use Bugsnag;
 
 class ProfileController extends Controller
 {
@@ -50,6 +50,9 @@ class ProfileController extends Controller
 
 	public function completeSetup(Request $request)
 	{
+		//TODO: create a form request and handle validation
+
+		//Update the user details and rethink about absolutely necessary info - lot of time to profile setup
 		dump($request->all());
 		dd('bingo!');
 	}

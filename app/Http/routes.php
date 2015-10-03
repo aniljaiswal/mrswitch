@@ -11,7 +11,6 @@
 |
 */
 
-
 /**
  * Home Page
  */
@@ -73,6 +72,8 @@ Route::group(['prefix' => 'profile', 'middleware' => 'auth'], function () {
     Route::get('/setup', 'ProfileController@setup');
 
     Route::post('/setup', 'ProfileController@completeSetup');
+
+    Route::resource('otp', 'OtpController', ['only' => ['store', 'show']]);
 
     //Protect main profile routes from pending members
     Route::group(['middleware' => 'user.pending'],function(){

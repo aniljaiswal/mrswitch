@@ -144,7 +144,7 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        App\Services\SMS\SMSServiceProvider::class,
 
         /*
          * Third Party Service Providers...
@@ -204,6 +204,7 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
         'Form'      => Illuminate\Html\FormFacade::class,
         'Html'      => Illuminate\Html\HtmlFacade::class,
+        'SMS'       => App\Services\SMS\Facades\SMS::class,
 
         /*
          * Third Party ...

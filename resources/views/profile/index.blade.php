@@ -4,7 +4,7 @@
 
 @include('profile.partials.nav')
 
-<section id="mainContent">
+<section id="mainProfileContent">
 	<div class="container">
 		<div class="row">
 			@include('profile.partials.sidebar')
@@ -61,10 +61,17 @@
 
 @section('extra_scripts')
 <script type="text/javascript">
-	$(document).ready(function(){
-		$('.datetimepicker').datetimepicker({
-			format:'Y-m-d H:i:s'
-		});
+	$('.datetimepicker').datetimepicker({
+		format:'Y-m-d H:i:s',
+		minDate:0,
+		minTime:0,
+		{allowTimes:[
+		  '09:00', '10:00', '11:00', '12:00',
+		  '13:00', '14:00', '15:00', '16:00',
+		  '17:00', '18:00', '19:00', '20:00',
+		  '21:00'
+	  	]},
+	  	todayButton: true
 	});
 </script>
 @stop

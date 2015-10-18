@@ -5,3 +5,6 @@
 tests/_output/*
 codeception.yml
 Envoy.blade.php
+/public/js/*
+/public/css/*
+/public/build/*
